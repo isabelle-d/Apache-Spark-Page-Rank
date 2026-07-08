@@ -1,0 +1,1525 @@
+Spark Command: /Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home/bin/java -cp /Users/isabelledarling/Downloads/spark-4.1.2-bin-hadoop3/conf/:/Users/isabelledarling/Downloads/spark-4.1.2-bin-hadoop3/jars/slf4j-api-2.0.17.jar:/Users/isabelledarling/Downloads/spark-4.1.2-bin-hadoop3/jars/* -Xmx1g -XX:+IgnoreUnrecognizedVMOptions --add-modules=jdk.incubator.vector --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.base/jdk.internal.ref=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/sun.nio.cs=ALL-UNNAMED --add-opens=java.base/sun.security.action=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=java.security.jgss/sun.security.krb5=ALL-UNNAMED -Djdk.reflect.useDirectMethodHandle=false -Dio.netty.tryReflectionSetAccessible=true -Dio.netty.allocator.type=pooled -Dio.netty.handler.ssl.defaultEndpointVerificationAlgorithm=NONE --enable-native-access=ALL-UNNAMED org.apache.spark.deploy.master.Master --host Isabelles-MacBook-Air.local --port 7077 --webui-port 8080
+========================================
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/06/19 00:43:16 WARN Utils: Your hostname, Isabelles-MacBook-Air.local, resolves to a loopback address: 127.0.0.1; using 192.168.1.3 instead (on interface en0)
+26/06/19 00:43:16 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+26/06/19 00:43:16 INFO Master: Started daemon with process name: 14254@Isabelles-MacBook-Air.local
+26/06/19 00:43:16 INFO SignalUtils: Registering signal handler for TERM
+26/06/19 00:43:16 INFO SignalUtils: Registering signal handler for HUP
+26/06/19 00:43:16 INFO SignalUtils: Registering signal handler for INT
+26/06/19 00:43:17 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/06/19 00:43:17 INFO SecurityManager: Changing view acls to: isabelledarling
+26/06/19 00:43:17 INFO SecurityManager: Changing modify acls to: isabelledarling
+26/06/19 00:43:17 INFO SecurityManager: Changing view acls groups to: isabelledarling
+26/06/19 00:43:17 INFO SecurityManager: Changing modify acls groups to: isabelledarling
+26/06/19 00:43:17 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: isabelledarling groups with view permissions: EMPTY; users with modify permissions: isabelledarling; groups with modify permissions: EMPTY; RPC SSL disabled
+26/06/19 00:43:17 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+26/06/19 00:43:17 INFO Master: Starting Spark master at spark://Isabelles-MacBook-Air.local:7077
+26/06/19 00:43:17 INFO Master: Running Spark version 4.1.2
+26/06/19 00:43:17 INFO JettyUtils: Start Jetty 0.0.0.0:8080 for MasterUI
+26/06/19 00:43:17 INFO Utils: Successfully started service 'MasterUI' on port 8080.
+26/06/19 00:43:17 INFO MasterWebUI: Bound MasterWebUI to 0.0.0.0, and started at http://192.168.1.3:8080
+26/06/19 00:43:17 INFO Utils: Successfully started service on port 6066.
+26/06/19 00:43:17 INFO StandaloneRestServer: Started REST server for submitting applications on Isabelles-MacBook-Air.local with port 6066
+26/06/19 00:43:17 INFO Master: I have been elected leader! New state: ALIVE
+26/06/19 00:45:10 INFO Master: Registering worker 192.168.1.3:51365 with 1 cores, 1024.0 MiB RAM
+26/06/19 00:46:07 INFO Master: Registering app PageRankWithGraphFrames
+26/06/19 00:46:07 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260619004607-0000
+26/06/19 00:46:07 INFO Master: Start scheduling for app app-20260619004607-0000 with rpId: 0
+26/06/19 00:46:07 INFO Master: Launching executor app-20260619004607-0000/0 on worker worker-20260619004510-192.168.1.3-51365
+26/06/19 00:46:07 INFO Master: Start scheduling for app app-20260619004607-0000 with rpId: 0
+26/06/19 00:46:19 INFO Master: Received unregister request from application app-20260619004607-0000
+26/06/19 00:46:19 INFO Master: Removing app app-20260619004607-0000
+26/06/19 00:46:19 INFO Master: 127.0.0.1:51391 got disassociated, removing it.
+26/06/19 00:46:19 INFO Master: 192.168.1.3:51389 got disassociated, removing it.
+26/06/19 00:46:19 WARN Master: Got status update for unknown executor app-20260619004607-0000/0
+26/06/19 00:46:30 INFO Master: Registering app PageRankWithGraphFrames
+26/06/19 00:46:30 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260619004630-0001
+26/06/19 00:46:30 INFO Master: Start scheduling for app app-20260619004630-0001 with rpId: 0
+26/06/19 00:46:30 INFO Master: Launching executor app-20260619004630-0001/0 on worker worker-20260619004510-192.168.1.3-51365
+26/06/19 00:46:30 INFO Master: Start scheduling for app app-20260619004630-0001 with rpId: 0
+26/06/19 02:24:57 INFO Master: Received unregister request from application app-20260619004630-0001
+26/06/19 02:24:57 INFO Master: Removing app app-20260619004630-0001
+26/06/19 02:24:57 INFO Master: 127.0.0.1:51415 got disassociated, removing it.
+26/06/19 02:24:57 INFO Master: 192.168.1.3:51413 got disassociated, removing it.
+26/06/19 02:24:57 WARN Master: Got status update for unknown executor app-20260619004630-0001/0
+26/06/19 02:26:53 INFO Master: 127.0.0.1:51366 got disassociated, removing it.
+26/06/19 02:26:53 INFO Master: 192.168.1.3:51365 got disassociated, removing it.
+26/06/19 02:26:53 INFO Master: Removing worker worker-20260619004510-192.168.1.3-51365 on 192.168.1.3:51365
+26/06/19 02:26:53 INFO Master: Telling app of lost worker: worker-20260619004510-192.168.1.3-51365
+26/06/19 02:27:39 INFO Master: Registering worker 192.168.1.3:52189 with 1 cores, 1024.0 MiB RAM
+26/06/19 02:28:43 INFO Master: 127.0.0.1:52190 got disassociated, removing it.
+26/06/19 02:28:43 INFO Master: 192.168.1.3:52189 got disassociated, removing it.
+26/06/19 02:28:43 INFO Master: Removing worker worker-20260619022738-192.168.1.3-52189 on 192.168.1.3:52189
+26/06/19 02:28:43 INFO Master: Telling app of lost worker: worker-20260619022738-192.168.1.3-52189
+26/06/19 02:33:45 INFO Master: Registering worker 192.168.1.3:52218 with 1 cores, 1024.0 MiB RAM
+26/06/19 02:34:24 INFO Master: 127.0.0.1:52220 got disassociated, removing it.
+26/06/19 02:34:24 INFO Master: 192.168.1.3:52218 got disassociated, removing it.
+26/06/19 02:34:24 INFO Master: Removing worker worker-20260619023345-192.168.1.3-52218 on 192.168.1.3:52218
+26/06/19 02:34:24 INFO Master: Telling app of lost worker: worker-20260619023345-192.168.1.3-52218
+26/06/19 02:34:31 INFO Master: Registering worker 192.168.1.3:52225 with 1 cores, 2.0 GiB RAM
+26/06/19 02:35:06 INFO Master: 127.0.0.1:52227 got disassociated, removing it.
+26/06/19 02:35:06 INFO Master: 192.168.1.3:52225 got disassociated, removing it.
+26/06/19 02:35:06 INFO Master: Removing worker worker-20260619023431-192.168.1.3-52225 on 192.168.1.3:52225
+26/06/19 02:35:06 INFO Master: Telling app of lost worker: worker-20260619023431-192.168.1.3-52225
+26/06/19 02:35:14 INFO Master: Registering worker 192.168.1.3:52242 with 1 cores, 1024.0 MiB RAM
+26/06/19 02:36:21 INFO Master: 127.0.0.1:52244 got disassociated, removing it.
+26/06/19 02:36:21 INFO Master: 192.168.1.3:52242 got disassociated, removing it.
+26/06/19 02:36:21 INFO Master: Removing worker worker-20260619023514-192.168.1.3-52242 on 192.168.1.3:52242
+26/06/19 02:36:21 INFO Master: Telling app of lost worker: worker-20260619023514-192.168.1.3-52242
+26/06/19 02:36:26 INFO Master: Registering worker 192.168.1.3:52252 with 1 cores, 1024.0 MiB RAM
+26/06/19 02:36:29 INFO Master: Registering worker 192.168.1.3:52257 with 1 cores, 1024.0 MiB RAM
+26/06/19 02:41:24 INFO Master: Registering app PageRankWithGraphFrames
+26/06/19 02:41:24 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260619024124-0002
+26/06/19 02:41:24 INFO Master: Start scheduling for app app-20260619024124-0002 with rpId: 0
+26/06/19 02:41:24 INFO Master: Launching executor app-20260619024124-0002/0 on worker worker-20260619023628-192.168.1.3-52257
+26/06/19 02:41:24 INFO Master: Launching executor app-20260619024124-0002/1 on worker worker-20260619023626-192.168.1.3-52252
+26/06/19 02:41:24 INFO Master: Start scheduling for app app-20260619024124-0002 with rpId: 0
+26/06/19 02:41:24 INFO Master: Start scheduling for app app-20260619024124-0002 with rpId: 0
+26/06/19 02:49:43 INFO Master: Received unregister request from application app-20260619024124-0002
+26/06/19 02:49:43 INFO Master: Removing app app-20260619024124-0002
+26/06/19 02:49:43 INFO Master: 127.0.0.1:52318 got disassociated, removing it.
+26/06/19 02:49:43 INFO Master: 192.168.1.3:52316 got disassociated, removing it.
+26/06/19 02:49:43 WARN Master: Got status update for unknown executor app-20260619024124-0002/0
+26/06/19 02:49:43 WARN Master: Got status update for unknown executor app-20260619024124-0002/1
+26/06/19 02:50:17 INFO Master: 127.0.0.1:52254 got disassociated, removing it.
+26/06/19 02:50:17 INFO Master: 192.168.1.3:52252 got disassociated, removing it.
+26/06/19 02:50:17 INFO Master: Removing worker worker-20260619023626-192.168.1.3-52252 on 192.168.1.3:52252
+26/06/19 02:50:17 INFO Master: Telling app of lost worker: worker-20260619023626-192.168.1.3-52252
+26/06/19 02:50:17 INFO Master: 127.0.0.1:52259 got disassociated, removing it.
+26/06/19 02:50:17 INFO Master: 192.168.1.3:52257 got disassociated, removing it.
+26/06/19 02:50:17 INFO Master: Removing worker worker-20260619023628-192.168.1.3-52257 on 192.168.1.3:52257
+26/06/19 02:50:17 INFO Master: Telling app of lost worker: worker-20260619023628-192.168.1.3-52257
+26/06/19 02:50:30 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/19 02:50:32 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/19 02:50:35 INFO Master: Registering worker 192.168.1.3:52441 with 1 cores, 1024.0 MiB RAM
+26/06/19 02:50:38 INFO Master: Registering worker 192.168.1.3:52446 with 1 cores, 1024.0 MiB RAM
+26/06/19 02:50:40 INFO Master: Registering worker 192.168.1.3:52451 with 1 cores, 1024.0 MiB RAM
+26/06/19 02:51:07 INFO Master: Registering app PageRankWithGraphFrames
+26/06/19 02:51:07 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260619025107-0003
+26/06/19 02:51:07 INFO Master: Start scheduling for app app-20260619025107-0003 with rpId: 0
+26/06/19 02:51:07 INFO Master: Launching executor app-20260619025107-0003/0 on worker worker-20260619025040-192.168.1.3-52451
+26/06/19 02:51:07 INFO Master: Launching executor app-20260619025107-0003/1 on worker worker-20260619025037-192.168.1.3-52446
+26/06/19 02:51:07 INFO Master: Launching executor app-20260619025107-0003/2 on worker worker-20260619025035-192.168.1.3-52441
+26/06/19 02:51:07 INFO Master: Launching executor app-20260619025107-0003/3 on worker worker-20260619025032-192.168.1.3-52437
+26/06/19 02:51:07 INFO Master: Launching executor app-20260619025107-0003/4 on worker worker-20260619025030-192.168.1.3-52433
+26/06/19 02:51:07 INFO Master: Start scheduling for app app-20260619025107-0003 with rpId: 0
+26/06/19 02:51:07 INFO Master: Start scheduling for app app-20260619025107-0003 with rpId: 0
+26/06/19 02:51:07 INFO Master: Start scheduling for app app-20260619025107-0003 with rpId: 0
+26/06/19 02:51:07 INFO Master: Start scheduling for app app-20260619025107-0003 with rpId: 0
+26/06/19 02:51:07 INFO Master: Start scheduling for app app-20260619025107-0003 with rpId: 0
+26/06/19 02:57:17 INFO Master: Received unregister request from application app-20260619025107-0003
+26/06/19 02:57:17 INFO Master: Removing app app-20260619025107-0003
+26/06/19 02:57:17 INFO Master: 127.0.0.1:52468 got disassociated, removing it.
+26/06/19 02:57:17 INFO Master: 192.168.1.3:52466 got disassociated, removing it.
+26/06/19 02:57:17 WARN Master: Got status update for unknown executor app-20260619025107-0003/2
+26/06/19 02:57:17 WARN Master: Got status update for unknown executor app-20260619025107-0003/4
+26/06/19 02:57:17 WARN Master: Got status update for unknown executor app-20260619025107-0003/1
+26/06/19 02:57:17 WARN Master: Got status update for unknown executor app-20260619025107-0003/3
+26/06/19 02:57:18 WARN Master: Got status update for unknown executor app-20260619025107-0003/0
+26/06/19 03:48:50 WARN Master: Removing worker-20260619025037-192.168.1.3-52446 because we got no heartbeat in 60000 ms
+26/06/19 03:48:50 INFO Master: Removing worker worker-20260619025037-192.168.1.3-52446 on 192.168.1.3:52446
+26/06/19 03:48:50 INFO Master: Telling app of lost worker: worker-20260619025037-192.168.1.3-52446
+26/06/19 03:48:50 WARN Master: Removing worker-20260619025035-192.168.1.3-52441 because we got no heartbeat in 60000 ms
+26/06/19 03:48:50 INFO Master: Removing worker worker-20260619025035-192.168.1.3-52441 on 192.168.1.3:52441
+26/06/19 03:48:50 INFO Master: Telling app of lost worker: worker-20260619025035-192.168.1.3-52441
+26/06/19 03:48:50 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/19 03:48:50 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/19 03:48:50 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/19 03:48:50 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/19 03:48:50 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/19 03:48:50 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/19 03:58:28 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/19 03:58:28 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/19 03:58:31 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/19 03:58:31 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/19 03:58:33 WARN Master: Got heartbeat from unregistered worker worker-20260619025035-192.168.1.3-52441. Asking it to re-register.
+26/06/19 03:58:33 INFO Master: Registering worker 192.168.1.3:52441 with 1 cores, 1024.0 MiB RAM
+26/06/19 03:58:36 WARN Master: Got heartbeat from unregistered worker worker-20260619025037-192.168.1.3-52446. Asking it to re-register.
+26/06/19 03:58:36 INFO Master: Registering worker 192.168.1.3:52446 with 1 cores, 1024.0 MiB RAM
+26/06/19 04:17:29 WARN Master: Removing worker-20260619025035-192.168.1.3-52441 because we got no heartbeat in 60000 ms
+26/06/19 04:17:29 INFO Master: Removing worker worker-20260619025035-192.168.1.3-52441 on 192.168.1.3:52441
+26/06/19 04:17:29 INFO Master: Telling app of lost worker: worker-20260619025035-192.168.1.3-52441
+26/06/19 04:17:29 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/19 04:17:29 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/19 04:17:29 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/19 04:17:29 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/19 04:17:29 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/19 04:17:29 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/19 04:17:30 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/19 04:17:30 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/19 04:17:33 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/19 04:17:33 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/19 04:17:35 WARN Master: Got heartbeat from unregistered worker worker-20260619025035-192.168.1.3-52441. Asking it to re-register.
+26/06/19 04:17:35 INFO Master: Registering worker 192.168.1.3:52441 with 1 cores, 1024.0 MiB RAM
+26/06/19 07:03:06 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/19 07:03:06 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/19 07:03:06 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/19 07:03:08 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/19 07:03:08 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/19 08:37:43 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/19 08:37:43 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/19 08:37:43 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/19 08:37:43 WARN Master: Removing worker-20260619025037-192.168.1.3-52446 because we got no heartbeat in 60000 ms
+26/06/19 08:37:43 INFO Master: Removing worker worker-20260619025037-192.168.1.3-52446 on 192.168.1.3:52446
+26/06/19 08:37:43 INFO Master: Telling app of lost worker: worker-20260619025037-192.168.1.3-52446
+26/06/19 08:37:43 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/19 08:37:43 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/19 08:37:43 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/19 08:37:43 WARN Master: Removing worker-20260619025035-192.168.1.3-52441 because we got no heartbeat in 60000 ms
+26/06/19 08:37:43 INFO Master: Removing worker worker-20260619025035-192.168.1.3-52441 on 192.168.1.3:52441
+26/06/19 08:37:43 INFO Master: Telling app of lost worker: worker-20260619025035-192.168.1.3-52441
+26/06/19 08:53:39 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/19 08:53:39 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/19 08:53:41 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/19 08:53:41 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/19 09:04:54 WARN Master: Got heartbeat from unregistered worker worker-20260619025035-192.168.1.3-52441. Asking it to re-register.
+26/06/19 09:04:54 INFO Master: Registering worker 192.168.1.3:52441 with 1 cores, 1024.0 MiB RAM
+26/06/19 09:04:56 WARN Master: Got heartbeat from unregistered worker worker-20260619025037-192.168.1.3-52446. Asking it to re-register.
+26/06/19 09:04:56 INFO Master: Registering worker 192.168.1.3:52446 with 1 cores, 1024.0 MiB RAM
+26/06/19 09:36:00 WARN Master: Removing worker-20260619025037-192.168.1.3-52446 because we got no heartbeat in 60000 ms
+26/06/19 09:36:00 INFO Master: Removing worker worker-20260619025037-192.168.1.3-52446 on 192.168.1.3:52446
+26/06/19 09:36:00 INFO Master: Telling app of lost worker: worker-20260619025037-192.168.1.3-52446
+26/06/19 09:36:00 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/19 09:36:00 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/19 09:36:00 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/19 09:36:00 WARN Master: Removing worker-20260619025040-192.168.1.3-52451 because we got no heartbeat in 60000 ms
+26/06/19 09:36:00 INFO Master: Removing worker worker-20260619025040-192.168.1.3-52451 on 192.168.1.3:52451
+26/06/19 09:36:00 INFO Master: Telling app of lost worker: worker-20260619025040-192.168.1.3-52451
+26/06/19 09:36:00 WARN Master: Removing worker-20260619025035-192.168.1.3-52441 because we got no heartbeat in 60000 ms
+26/06/19 09:36:00 INFO Master: Removing worker worker-20260619025035-192.168.1.3-52441 on 192.168.1.3:52441
+26/06/19 09:36:00 INFO Master: Telling app of lost worker: worker-20260619025035-192.168.1.3-52441
+26/06/19 09:36:00 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/19 09:36:00 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/19 09:36:00 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/19 09:36:02 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/19 09:36:02 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/19 09:36:04 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/19 09:36:04 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/19 09:36:07 WARN Master: Got heartbeat from unregistered worker worker-20260619025035-192.168.1.3-52441. Asking it to re-register.
+26/06/19 09:36:07 INFO Master: Registering worker 192.168.1.3:52441 with 1 cores, 1024.0 MiB RAM
+26/06/19 09:36:09 WARN Master: Got heartbeat from unregistered worker worker-20260619025037-192.168.1.3-52446. Asking it to re-register.
+26/06/19 09:36:09 INFO Master: Registering worker 192.168.1.3:52446 with 1 cores, 1024.0 MiB RAM
+26/06/19 09:36:12 WARN Master: Got heartbeat from unregistered worker worker-20260619025040-192.168.1.3-52451. Asking it to re-register.
+26/06/19 09:36:12 INFO Master: Registering worker 192.168.1.3:52451 with 1 cores, 1024.0 MiB RAM
+26/06/19 10:01:37 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/19 10:01:37 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/19 10:01:37 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/19 10:01:37 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/19 10:01:37 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/19 10:01:37 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/19 10:01:38 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/19 10:01:38 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/19 10:01:41 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/19 10:01:41 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/19 11:12:35 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/19 11:12:35 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/19 11:12:35 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/19 11:12:36 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/19 11:12:36 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/19 11:56:27 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/19 11:56:27 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/19 11:56:27 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/19 11:56:27 WARN Master: Removing worker-20260619025035-192.168.1.3-52441 because we got no heartbeat in 60000 ms
+26/06/19 11:56:27 INFO Master: Removing worker worker-20260619025035-192.168.1.3-52441 on 192.168.1.3:52441
+26/06/19 11:56:27 INFO Master: Telling app of lost worker: worker-20260619025035-192.168.1.3-52441
+26/06/19 11:56:27 WARN Master: Removing worker-20260619025037-192.168.1.3-52446 because we got no heartbeat in 60000 ms
+26/06/19 11:56:27 INFO Master: Removing worker worker-20260619025037-192.168.1.3-52446 on 192.168.1.3:52446
+26/06/19 11:56:27 INFO Master: Telling app of lost worker: worker-20260619025037-192.168.1.3-52446
+26/06/19 11:56:27 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/19 11:56:27 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/19 11:56:27 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/19 11:56:29 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/19 11:56:29 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/19 11:56:31 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/19 11:56:31 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/19 11:56:34 WARN Master: Got heartbeat from unregistered worker worker-20260619025035-192.168.1.3-52441. Asking it to re-register.
+26/06/19 11:56:34 INFO Master: Registering worker 192.168.1.3:52441 with 1 cores, 1024.0 MiB RAM
+26/06/19 11:56:36 WARN Master: Got heartbeat from unregistered worker worker-20260619025037-192.168.1.3-52446. Asking it to re-register.
+26/06/19 11:56:36 INFO Master: Registering worker 192.168.1.3:52446 with 1 cores, 1024.0 MiB RAM
+26/06/19 12:47:55 WARN Master: Removing worker-20260619025037-192.168.1.3-52446 because we got no heartbeat in 60000 ms
+26/06/19 12:47:55 INFO Master: Removing worker worker-20260619025037-192.168.1.3-52446 on 192.168.1.3:52446
+26/06/19 12:47:55 INFO Master: Telling app of lost worker: worker-20260619025037-192.168.1.3-52446
+26/06/19 12:47:55 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/19 12:47:55 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/19 12:47:55 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/19 12:47:55 WARN Master: Removing worker-20260619025035-192.168.1.3-52441 because we got no heartbeat in 60000 ms
+26/06/19 12:47:55 INFO Master: Removing worker worker-20260619025035-192.168.1.3-52441 on 192.168.1.3:52441
+26/06/19 12:47:55 INFO Master: Telling app of lost worker: worker-20260619025035-192.168.1.3-52441
+26/06/19 12:47:55 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/19 12:47:55 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/19 12:47:55 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/19 12:47:57 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/19 12:47:57 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/19 12:47:59 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/19 12:47:59 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/19 12:48:02 WARN Master: Got heartbeat from unregistered worker worker-20260619025035-192.168.1.3-52441. Asking it to re-register.
+26/06/19 12:48:02 INFO Master: Registering worker 192.168.1.3:52441 with 1 cores, 1024.0 MiB RAM
+26/06/19 12:48:04 WARN Master: Got heartbeat from unregistered worker worker-20260619025037-192.168.1.3-52446. Asking it to re-register.
+26/06/19 12:48:04 INFO Master: Registering worker 192.168.1.3:52446 with 1 cores, 1024.0 MiB RAM
+26/06/19 13:08:06 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/19 13:08:06 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/19 13:08:06 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/19 13:08:07 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/19 13:08:07 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/19 13:16:52 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/19 13:16:52 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/19 13:16:52 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/19 13:16:52 WARN Master: Removing worker-20260619025037-192.168.1.3-52446 because we got no heartbeat in 60000 ms
+26/06/19 13:16:52 INFO Master: Removing worker worker-20260619025037-192.168.1.3-52446 on 192.168.1.3:52446
+26/06/19 13:16:52 INFO Master: Telling app of lost worker: worker-20260619025037-192.168.1.3-52446
+26/06/19 13:16:52 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/19 13:16:52 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/19 13:16:52 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/19 13:16:52 WARN Master: Removing worker-20260619025035-192.168.1.3-52441 because we got no heartbeat in 60000 ms
+26/06/19 13:16:52 INFO Master: Removing worker worker-20260619025035-192.168.1.3-52441 on 192.168.1.3:52441
+26/06/19 13:16:52 INFO Master: Telling app of lost worker: worker-20260619025035-192.168.1.3-52441
+26/06/19 13:16:54 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/19 13:16:54 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/19 13:16:56 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/19 13:16:56 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/19 13:16:59 WARN Master: Got heartbeat from unregistered worker worker-20260619025035-192.168.1.3-52441. Asking it to re-register.
+26/06/19 13:16:59 INFO Master: Registering worker 192.168.1.3:52441 with 1 cores, 1024.0 MiB RAM
+26/06/19 13:17:01 WARN Master: Got heartbeat from unregistered worker worker-20260619025037-192.168.1.3-52446. Asking it to re-register.
+26/06/19 13:17:01 INFO Master: Registering worker 192.168.1.3:52446 with 1 cores, 1024.0 MiB RAM
+26/06/19 16:28:26 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/19 16:28:26 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/19 16:28:26 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/19 16:28:26 WARN Master: Removing worker-20260619025037-192.168.1.3-52446 because we got no heartbeat in 60000 ms
+26/06/19 16:28:26 INFO Master: Removing worker worker-20260619025037-192.168.1.3-52446 on 192.168.1.3:52446
+26/06/19 16:28:26 INFO Master: Telling app of lost worker: worker-20260619025037-192.168.1.3-52446
+26/06/19 16:28:26 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/19 16:28:26 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/19 16:28:26 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/19 16:28:26 WARN Master: Removing worker-20260619025035-192.168.1.3-52441 because we got no heartbeat in 60000 ms
+26/06/19 16:28:26 INFO Master: Removing worker worker-20260619025035-192.168.1.3-52441 on 192.168.1.3:52441
+26/06/19 16:28:26 INFO Master: Telling app of lost worker: worker-20260619025035-192.168.1.3-52441
+26/06/19 16:28:27 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/19 16:28:27 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/19 16:45:45 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/19 16:45:45 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/19 16:45:48 WARN Master: Got heartbeat from unregistered worker worker-20260619025035-192.168.1.3-52441. Asking it to re-register.
+26/06/19 16:45:48 INFO Master: Registering worker 192.168.1.3:52441 with 1 cores, 1024.0 MiB RAM
+26/06/19 16:56:31 WARN Master: Got heartbeat from unregistered worker worker-20260619025037-192.168.1.3-52446. Asking it to re-register.
+26/06/19 16:56:31 INFO Master: Registering worker 192.168.1.3:52446 with 1 cores, 1024.0 MiB RAM
+26/06/19 21:03:27 WARN Master: Removing worker-20260619025040-192.168.1.3-52451 because we got no heartbeat in 60000 ms
+26/06/19 21:03:27 INFO Master: Removing worker worker-20260619025040-192.168.1.3-52451 on 192.168.1.3:52451
+26/06/19 21:03:27 INFO Master: Telling app of lost worker: worker-20260619025040-192.168.1.3-52451
+26/06/19 21:03:27 WARN Master: Removing worker-20260619025037-192.168.1.3-52446 because we got no heartbeat in 60000 ms
+26/06/19 21:03:27 INFO Master: Removing worker worker-20260619025037-192.168.1.3-52446 on 192.168.1.3:52446
+26/06/19 21:03:27 INFO Master: Telling app of lost worker: worker-20260619025037-192.168.1.3-52446
+26/06/19 21:03:27 WARN Master: Removing worker-20260619025035-192.168.1.3-52441 because we got no heartbeat in 60000 ms
+26/06/19 21:03:27 INFO Master: Removing worker worker-20260619025035-192.168.1.3-52441 on 192.168.1.3:52441
+26/06/19 21:03:27 INFO Master: Telling app of lost worker: worker-20260619025035-192.168.1.3-52441
+26/06/19 21:03:27 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/19 21:03:27 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/19 21:03:27 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/19 21:03:27 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/19 21:03:27 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/19 21:03:27 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/19 21:03:29 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/19 21:03:29 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/19 21:07:28 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/19 21:07:28 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/19 21:07:30 WARN Master: Got heartbeat from unregistered worker worker-20260619025035-192.168.1.3-52441. Asking it to re-register.
+26/06/19 21:07:30 INFO Master: Registering worker 192.168.1.3:52441 with 1 cores, 1024.0 MiB RAM
+26/06/19 21:07:33 WARN Master: Got heartbeat from unregistered worker worker-20260619025037-192.168.1.3-52446. Asking it to re-register.
+26/06/19 21:07:33 INFO Master: Registering worker 192.168.1.3:52446 with 1 cores, 1024.0 MiB RAM
+26/06/19 21:07:35 WARN Master: Got heartbeat from unregistered worker worker-20260619025040-192.168.1.3-52451. Asking it to re-register.
+26/06/19 21:07:35 INFO Master: Registering worker 192.168.1.3:52451 with 1 cores, 1024.0 MiB RAM
+26/06/19 21:40:33 WARN Master: Removing worker-20260619025037-192.168.1.3-52446 because we got no heartbeat in 60000 ms
+26/06/19 21:40:33 INFO Master: Removing worker worker-20260619025037-192.168.1.3-52446 on 192.168.1.3:52446
+26/06/19 21:40:33 INFO Master: Telling app of lost worker: worker-20260619025037-192.168.1.3-52446
+26/06/19 21:40:33 WARN Master: Removing worker-20260619025035-192.168.1.3-52441 because we got no heartbeat in 60000 ms
+26/06/19 21:40:33 INFO Master: Removing worker worker-20260619025035-192.168.1.3-52441 on 192.168.1.3:52441
+26/06/19 21:40:33 INFO Master: Telling app of lost worker: worker-20260619025035-192.168.1.3-52441
+26/06/19 21:40:33 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/19 21:40:33 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/19 21:40:33 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/19 21:40:33 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/19 21:40:33 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/19 21:40:33 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/19 21:50:21 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/19 21:50:21 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/19 21:50:24 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/19 21:50:24 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/19 21:50:26 WARN Master: Got heartbeat from unregistered worker worker-20260619025035-192.168.1.3-52441. Asking it to re-register.
+26/06/19 21:50:26 INFO Master: Registering worker 192.168.1.3:52441 with 1 cores, 1024.0 MiB RAM
+26/06/19 21:50:29 WARN Master: Got heartbeat from unregistered worker worker-20260619025037-192.168.1.3-52446. Asking it to re-register.
+26/06/19 21:50:29 INFO Master: Registering worker 192.168.1.3:52446 with 1 cores, 1024.0 MiB RAM
+26/06/19 22:15:12 WARN Master: Removing worker-20260619025035-192.168.1.3-52441 because we got no heartbeat in 60000 ms
+26/06/19 22:15:12 INFO Master: Removing worker worker-20260619025035-192.168.1.3-52441 on 192.168.1.3:52441
+26/06/19 22:15:12 INFO Master: Telling app of lost worker: worker-20260619025035-192.168.1.3-52441
+26/06/19 22:15:12 WARN Master: Removing worker-20260619025037-192.168.1.3-52446 because we got no heartbeat in 60000 ms
+26/06/19 22:15:12 INFO Master: Removing worker worker-20260619025037-192.168.1.3-52446 on 192.168.1.3:52446
+26/06/19 22:15:12 INFO Master: Telling app of lost worker: worker-20260619025037-192.168.1.3-52446
+26/06/19 22:15:12 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/19 22:15:12 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/19 22:15:12 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/19 22:15:12 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/19 22:15:12 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/19 22:15:12 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/19 22:15:14 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/19 22:15:14 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/19 22:15:16 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/19 22:15:16 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/19 22:15:19 WARN Master: Got heartbeat from unregistered worker worker-20260619025035-192.168.1.3-52441. Asking it to re-register.
+26/06/19 22:15:19 INFO Master: Registering worker 192.168.1.3:52441 with 1 cores, 1024.0 MiB RAM
+26/06/19 22:15:21 WARN Master: Got heartbeat from unregistered worker worker-20260619025037-192.168.1.3-52446. Asking it to re-register.
+26/06/19 22:15:21 INFO Master: Registering worker 192.168.1.3:52446 with 1 cores, 1024.0 MiB RAM
+26/06/19 23:07:25 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/19 23:07:25 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/19 23:07:25 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/19 23:07:25 WARN Master: Removing worker-20260619025035-192.168.1.3-52441 because we got no heartbeat in 60000 ms
+26/06/19 23:07:25 INFO Master: Removing worker worker-20260619025035-192.168.1.3-52441 on 192.168.1.3:52441
+26/06/19 23:07:25 INFO Master: Telling app of lost worker: worker-20260619025035-192.168.1.3-52441
+26/06/19 23:07:25 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/19 23:07:25 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/19 23:07:25 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/19 23:07:25 WARN Master: Removing worker-20260619025037-192.168.1.3-52446 because we got no heartbeat in 60000 ms
+26/06/19 23:07:25 INFO Master: Removing worker worker-20260619025037-192.168.1.3-52446 on 192.168.1.3:52446
+26/06/19 23:07:25 INFO Master: Telling app of lost worker: worker-20260619025037-192.168.1.3-52446
+26/06/19 23:07:27 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/19 23:07:27 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/19 23:07:29 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/19 23:07:29 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/19 23:07:32 WARN Master: Got heartbeat from unregistered worker worker-20260619025035-192.168.1.3-52441. Asking it to re-register.
+26/06/19 23:07:32 INFO Master: Registering worker 192.168.1.3:52441 with 1 cores, 1024.0 MiB RAM
+26/06/19 23:07:34 WARN Master: Got heartbeat from unregistered worker worker-20260619025037-192.168.1.3-52446. Asking it to re-register.
+26/06/19 23:07:34 INFO Master: Registering worker 192.168.1.3:52446 with 1 cores, 1024.0 MiB RAM
+26/06/19 23:15:46 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/19 23:15:46 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/19 23:15:46 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/19 23:15:47 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/19 23:15:47 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/20 01:29:06 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/20 01:29:06 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/20 01:29:06 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/20 01:29:06 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/20 01:29:06 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/20 01:29:06 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/20 01:29:07 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/20 01:29:07 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/20 01:29:10 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/20 01:29:10 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/20 02:21:38 WARN Master: Removing worker-20260619025035-192.168.1.3-52441 because we got no heartbeat in 60000 ms
+26/06/20 02:21:38 INFO Master: Removing worker worker-20260619025035-192.168.1.3-52441 on 192.168.1.3:52441
+26/06/20 02:21:38 INFO Master: Telling app of lost worker: worker-20260619025035-192.168.1.3-52441
+26/06/20 02:21:38 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/20 02:21:38 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/20 02:21:38 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/20 02:21:38 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/20 02:21:38 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/20 02:21:38 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/20 02:21:39 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/20 02:21:39 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/20 02:21:42 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/20 02:21:42 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/20 02:21:44 WARN Master: Got heartbeat from unregistered worker worker-20260619025035-192.168.1.3-52441. Asking it to re-register.
+26/06/20 02:21:44 INFO Master: Registering worker 192.168.1.3:52441 with 1 cores, 1024.0 MiB RAM
+26/06/20 06:09:36 WARN Master: Removing worker-20260619025040-192.168.1.3-52451 because we got no heartbeat in 60000 ms
+26/06/20 06:09:36 INFO Master: Removing worker worker-20260619025040-192.168.1.3-52451 on 192.168.1.3:52451
+26/06/20 06:09:36 INFO Master: Telling app of lost worker: worker-20260619025040-192.168.1.3-52451
+26/06/20 06:09:36 WARN Master: Removing worker-20260619025037-192.168.1.3-52446 because we got no heartbeat in 60000 ms
+26/06/20 06:09:36 INFO Master: Removing worker worker-20260619025037-192.168.1.3-52446 on 192.168.1.3:52446
+26/06/20 06:09:36 INFO Master: Telling app of lost worker: worker-20260619025037-192.168.1.3-52446
+26/06/20 06:09:36 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/20 06:09:36 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/20 06:09:36 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/20 06:09:36 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/20 06:09:36 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/20 06:09:36 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/20 06:09:36 WARN Master: Removing worker-20260619025035-192.168.1.3-52441 because we got no heartbeat in 60000 ms
+26/06/20 06:09:36 INFO Master: Removing worker worker-20260619025035-192.168.1.3-52441 on 192.168.1.3:52441
+26/06/20 06:09:36 INFO Master: Telling app of lost worker: worker-20260619025035-192.168.1.3-52441
+26/06/20 06:09:37 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/20 06:09:37 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/20 06:09:40 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/20 06:09:40 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/20 06:19:33 WARN Master: Got heartbeat from unregistered worker worker-20260619025035-192.168.1.3-52441. Asking it to re-register.
+26/06/20 06:19:33 INFO Master: Registering worker 192.168.1.3:52441 with 1 cores, 1024.0 MiB RAM
+26/06/20 06:19:36 WARN Master: Got heartbeat from unregistered worker worker-20260619025037-192.168.1.3-52446. Asking it to re-register.
+26/06/20 06:19:36 INFO Master: Registering worker 192.168.1.3:52446 with 1 cores, 1024.0 MiB RAM
+26/06/20 06:19:38 WARN Master: Got heartbeat from unregistered worker worker-20260619025040-192.168.1.3-52451. Asking it to re-register.
+26/06/20 06:19:38 INFO Master: Registering worker 192.168.1.3:52451 with 1 cores, 1024.0 MiB RAM
+26/06/20 06:54:53 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/20 06:54:53 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/20 06:54:53 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/20 06:54:53 WARN Master: Removing worker-20260619025040-192.168.1.3-52451 because we got no heartbeat in 60000 ms
+26/06/20 06:54:53 INFO Master: Removing worker worker-20260619025040-192.168.1.3-52451 on 192.168.1.3:52451
+26/06/20 06:54:53 INFO Master: Telling app of lost worker: worker-20260619025040-192.168.1.3-52451
+26/06/20 06:54:53 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/20 06:54:53 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/20 06:54:53 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/20 06:54:53 WARN Master: Removing worker-20260619025035-192.168.1.3-52441 because we got no heartbeat in 60000 ms
+26/06/20 06:54:53 INFO Master: Removing worker worker-20260619025035-192.168.1.3-52441 on 192.168.1.3:52441
+26/06/20 06:54:53 INFO Master: Telling app of lost worker: worker-20260619025035-192.168.1.3-52441
+26/06/20 06:54:53 WARN Master: Removing worker-20260619025037-192.168.1.3-52446 because we got no heartbeat in 60000 ms
+26/06/20 06:54:53 INFO Master: Removing worker worker-20260619025037-192.168.1.3-52446 on 192.168.1.3:52446
+26/06/20 06:54:53 INFO Master: Telling app of lost worker: worker-20260619025037-192.168.1.3-52446
+26/06/20 06:54:55 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/20 06:54:55 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/20 07:12:22 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/20 07:12:22 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/20 07:12:24 WARN Master: Got heartbeat from unregistered worker worker-20260619025035-192.168.1.3-52441. Asking it to re-register.
+26/06/20 07:12:24 INFO Master: Registering worker 192.168.1.3:52441 with 1 cores, 1024.0 MiB RAM
+26/06/20 07:27:33 WARN Master: Got heartbeat from unregistered worker worker-20260619025037-192.168.1.3-52446. Asking it to re-register.
+26/06/20 07:27:33 INFO Master: Registering worker 192.168.1.3:52446 with 1 cores, 1024.0 MiB RAM
+26/06/20 07:27:35 WARN Master: Got heartbeat from unregistered worker worker-20260619025040-192.168.1.3-52451. Asking it to re-register.
+26/06/20 07:27:35 INFO Master: Registering worker 192.168.1.3:52451 with 1 cores, 1024.0 MiB RAM
+26/06/20 10:32:30 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/20 10:32:30 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/20 10:32:30 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/20 10:32:30 WARN Master: Removing worker-20260619025040-192.168.1.3-52451 because we got no heartbeat in 60000 ms
+26/06/20 10:32:30 INFO Master: Removing worker worker-20260619025040-192.168.1.3-52451 on 192.168.1.3:52451
+26/06/20 10:32:30 INFO Master: Telling app of lost worker: worker-20260619025040-192.168.1.3-52451
+26/06/20 10:32:30 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/20 10:32:30 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/20 10:32:30 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/20 10:32:30 WARN Master: Removing worker-20260619025035-192.168.1.3-52441 because we got no heartbeat in 60000 ms
+26/06/20 10:32:30 INFO Master: Removing worker worker-20260619025035-192.168.1.3-52441 on 192.168.1.3:52441
+26/06/20 10:32:30 INFO Master: Telling app of lost worker: worker-20260619025035-192.168.1.3-52441
+26/06/20 10:32:30 WARN Master: Removing worker-20260619025037-192.168.1.3-52446 because we got no heartbeat in 60000 ms
+26/06/20 10:32:30 INFO Master: Removing worker worker-20260619025037-192.168.1.3-52446 on 192.168.1.3:52446
+26/06/20 10:32:30 INFO Master: Telling app of lost worker: worker-20260619025037-192.168.1.3-52446
+26/06/20 10:32:32 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/20 10:32:32 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/20 10:32:34 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/20 10:32:34 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/20 10:32:37 WARN Master: Got heartbeat from unregistered worker worker-20260619025035-192.168.1.3-52441. Asking it to re-register.
+26/06/20 10:32:37 INFO Master: Registering worker 192.168.1.3:52441 with 1 cores, 1024.0 MiB RAM
+26/06/20 10:32:39 WARN Master: Got heartbeat from unregistered worker worker-20260619025037-192.168.1.3-52446. Asking it to re-register.
+26/06/20 10:32:39 INFO Master: Registering worker 192.168.1.3:52446 with 1 cores, 1024.0 MiB RAM
+26/06/20 10:32:42 WARN Master: Got heartbeat from unregistered worker worker-20260619025040-192.168.1.3-52451. Asking it to re-register.
+26/06/20 10:32:42 INFO Master: Registering worker 192.168.1.3:52451 with 1 cores, 1024.0 MiB RAM
+26/06/20 10:36:29 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/20 10:36:29 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/20 10:36:29 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/20 10:36:29 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/20 10:36:29 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/20 10:36:29 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/20 10:36:31 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/20 10:36:31 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/20 10:36:33 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/20 10:36:33 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/20 11:11:43 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/20 11:11:43 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/20 11:11:43 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/20 11:11:43 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/20 11:11:43 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/20 11:11:43 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/20 11:11:43 WARN Master: Removing worker-20260619025037-192.168.1.3-52446 because we got no heartbeat in 60000 ms
+26/06/20 11:11:43 INFO Master: Removing worker worker-20260619025037-192.168.1.3-52446 on 192.168.1.3:52446
+26/06/20 11:11:43 INFO Master: Telling app of lost worker: worker-20260619025037-192.168.1.3-52446
+26/06/20 11:11:43 WARN Master: Removing worker-20260619025040-192.168.1.3-52451 because we got no heartbeat in 60000 ms
+26/06/20 11:11:43 INFO Master: Removing worker worker-20260619025040-192.168.1.3-52451 on 192.168.1.3:52451
+26/06/20 11:11:43 INFO Master: Telling app of lost worker: worker-20260619025040-192.168.1.3-52451
+26/06/20 11:11:43 WARN Master: Removing worker-20260619025035-192.168.1.3-52441 because we got no heartbeat in 60000 ms
+26/06/20 11:11:43 INFO Master: Removing worker worker-20260619025035-192.168.1.3-52441 on 192.168.1.3:52441
+26/06/20 11:11:43 INFO Master: Telling app of lost worker: worker-20260619025035-192.168.1.3-52441
+26/06/20 11:11:44 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/20 11:11:45 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/20 11:11:47 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/20 11:11:47 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/20 11:11:49 WARN Master: Got heartbeat from unregistered worker worker-20260619025035-192.168.1.3-52441. Asking it to re-register.
+26/06/20 11:11:50 INFO Master: Registering worker 192.168.1.3:52441 with 1 cores, 1024.0 MiB RAM
+26/06/20 11:11:52 WARN Master: Got heartbeat from unregistered worker worker-20260619025037-192.168.1.3-52446. Asking it to re-register.
+26/06/20 11:11:52 INFO Master: Registering worker 192.168.1.3:52446 with 1 cores, 1024.0 MiB RAM
+26/06/20 11:23:33 WARN Master: Got heartbeat from unregistered worker worker-20260619025040-192.168.1.3-52451. Asking it to re-register.
+26/06/20 11:23:33 INFO Master: Registering worker 192.168.1.3:52451 with 1 cores, 1024.0 MiB RAM
+26/06/20 11:29:41 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/20 11:29:41 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/20 11:29:41 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/20 11:29:41 WARN Master: Removing worker-20260619025037-192.168.1.3-52446 because we got no heartbeat in 60000 ms
+26/06/20 11:29:41 INFO Master: Removing worker worker-20260619025037-192.168.1.3-52446 on 192.168.1.3:52446
+26/06/20 11:29:41 INFO Master: Telling app of lost worker: worker-20260619025037-192.168.1.3-52446
+26/06/20 11:29:41 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/20 11:29:41 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/20 11:29:41 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/20 11:29:41 WARN Master: Removing worker-20260619025035-192.168.1.3-52441 because we got no heartbeat in 60000 ms
+26/06/20 11:29:41 INFO Master: Removing worker worker-20260619025035-192.168.1.3-52441 on 192.168.1.3:52441
+26/06/20 11:29:41 INFO Master: Telling app of lost worker: worker-20260619025035-192.168.1.3-52441
+26/06/20 11:29:41 WARN Master: Removing worker-20260619025040-192.168.1.3-52451 because we got no heartbeat in 60000 ms
+26/06/20 11:29:41 INFO Master: Removing worker worker-20260619025040-192.168.1.3-52451 on 192.168.1.3:52451
+26/06/20 11:29:41 INFO Master: Telling app of lost worker: worker-20260619025040-192.168.1.3-52451
+26/06/20 11:29:43 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/20 11:29:43 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/20 11:29:45 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/20 11:29:45 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/20 11:29:48 WARN Master: Got heartbeat from unregistered worker worker-20260619025035-192.168.1.3-52441. Asking it to re-register.
+26/06/20 11:29:48 INFO Master: Registering worker 192.168.1.3:52441 with 1 cores, 1024.0 MiB RAM
+26/06/20 11:29:50 WARN Master: Got heartbeat from unregistered worker worker-20260619025037-192.168.1.3-52446. Asking it to re-register.
+26/06/20 11:29:50 INFO Master: Registering worker 192.168.1.3:52446 with 1 cores, 1024.0 MiB RAM
+26/06/20 11:29:53 WARN Master: Got heartbeat from unregistered worker worker-20260619025040-192.168.1.3-52451. Asking it to re-register.
+26/06/20 11:29:53 INFO Master: Registering worker 192.168.1.3:52451 with 1 cores, 1024.0 MiB RAM
+26/06/20 12:24:13 WARN Master: Removing worker-20260619025037-192.168.1.3-52446 because we got no heartbeat in 60000 ms
+26/06/20 12:24:13 INFO Master: Removing worker worker-20260619025037-192.168.1.3-52446 on 192.168.1.3:52446
+26/06/20 12:24:13 INFO Master: Telling app of lost worker: worker-20260619025037-192.168.1.3-52446
+26/06/20 12:24:13 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/20 12:24:13 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/20 12:24:13 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/20 12:24:13 WARN Master: Removing worker-20260619025035-192.168.1.3-52441 because we got no heartbeat in 60000 ms
+26/06/20 12:24:13 INFO Master: Removing worker worker-20260619025035-192.168.1.3-52441 on 192.168.1.3:52441
+26/06/20 12:24:13 INFO Master: Telling app of lost worker: worker-20260619025035-192.168.1.3-52441
+26/06/20 12:24:13 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/20 12:24:13 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/20 12:24:13 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/20 12:24:13 WARN Master: Removing worker-20260619025040-192.168.1.3-52451 because we got no heartbeat in 60000 ms
+26/06/20 12:24:13 INFO Master: Removing worker worker-20260619025040-192.168.1.3-52451 on 192.168.1.3:52451
+26/06/20 12:24:13 INFO Master: Telling app of lost worker: worker-20260619025040-192.168.1.3-52451
+26/06/20 12:24:14 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/20 12:24:14 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/20 12:39:23 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/20 12:39:23 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/20 12:39:26 WARN Master: Got heartbeat from unregistered worker worker-20260619025035-192.168.1.3-52441. Asking it to re-register.
+26/06/20 12:39:26 INFO Master: Registering worker 192.168.1.3:52441 with 1 cores, 1024.0 MiB RAM
+26/06/20 12:55:33 WARN Master: Got heartbeat from unregistered worker worker-20260619025037-192.168.1.3-52446. Asking it to re-register.
+26/06/20 12:55:33 INFO Master: Registering worker 192.168.1.3:52446 with 1 cores, 1024.0 MiB RAM
+26/06/20 12:55:36 WARN Master: Got heartbeat from unregistered worker worker-20260619025040-192.168.1.3-52451. Asking it to re-register.
+26/06/20 12:55:36 INFO Master: Registering worker 192.168.1.3:52451 with 1 cores, 1024.0 MiB RAM
+26/06/20 14:15:28 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/20 14:15:28 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/20 14:15:28 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/20 14:15:28 WARN Master: Removing worker-20260619025035-192.168.1.3-52441 because we got no heartbeat in 60000 ms
+26/06/20 14:15:28 INFO Master: Removing worker worker-20260619025035-192.168.1.3-52441 on 192.168.1.3:52441
+26/06/20 14:15:28 INFO Master: Telling app of lost worker: worker-20260619025035-192.168.1.3-52441
+26/06/20 14:15:28 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/20 14:15:28 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/20 14:15:28 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/20 14:15:28 WARN Master: Removing worker-20260619025037-192.168.1.3-52446 because we got no heartbeat in 60000 ms
+26/06/20 14:15:28 INFO Master: Removing worker worker-20260619025037-192.168.1.3-52446 on 192.168.1.3:52446
+26/06/20 14:15:28 INFO Master: Telling app of lost worker: worker-20260619025037-192.168.1.3-52446
+26/06/20 14:26:10 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/20 14:26:10 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/20 14:26:12 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/20 14:26:12 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/20 14:26:15 WARN Master: Got heartbeat from unregistered worker worker-20260619025035-192.168.1.3-52441. Asking it to re-register.
+26/06/20 14:26:15 INFO Master: Registering worker 192.168.1.3:52441 with 1 cores, 1024.0 MiB RAM
+26/06/20 14:26:18 WARN Master: Got heartbeat from unregistered worker worker-20260619025037-192.168.1.3-52446. Asking it to re-register.
+26/06/20 14:26:18 INFO Master: Registering worker 192.168.1.3:52446 with 1 cores, 1024.0 MiB RAM
+26/06/20 15:18:09 WARN Master: Removing worker-20260619025037-192.168.1.3-52446 because we got no heartbeat in 60000 ms
+26/06/20 15:18:09 INFO Master: Removing worker worker-20260619025037-192.168.1.3-52446 on 192.168.1.3:52446
+26/06/20 15:18:09 INFO Master: Telling app of lost worker: worker-20260619025037-192.168.1.3-52446
+26/06/20 15:18:09 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/20 15:18:09 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/20 15:18:09 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/20 15:18:09 WARN Master: Removing worker-20260619025040-192.168.1.3-52451 because we got no heartbeat in 60000 ms
+26/06/20 15:18:09 INFO Master: Removing worker worker-20260619025040-192.168.1.3-52451 on 192.168.1.3:52451
+26/06/20 15:18:09 INFO Master: Telling app of lost worker: worker-20260619025040-192.168.1.3-52451
+26/06/20 15:18:09 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/20 15:18:09 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/20 15:18:09 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/20 15:18:09 WARN Master: Removing worker-20260619025035-192.168.1.3-52441 because we got no heartbeat in 60000 ms
+26/06/20 15:18:09 INFO Master: Removing worker worker-20260619025035-192.168.1.3-52441 on 192.168.1.3:52441
+26/06/20 15:18:09 INFO Master: Telling app of lost worker: worker-20260619025035-192.168.1.3-52441
+26/06/20 15:18:10 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/20 15:18:10 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/20 15:18:13 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/20 15:18:13 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/20 15:27:12 WARN Master: Got heartbeat from unregistered worker worker-20260619025035-192.168.1.3-52441. Asking it to re-register.
+26/06/20 15:27:12 INFO Master: Registering worker 192.168.1.3:52441 with 1 cores, 1024.0 MiB RAM
+26/06/20 15:27:15 WARN Master: Got heartbeat from unregistered worker worker-20260619025037-192.168.1.3-52446. Asking it to re-register.
+26/06/20 15:27:15 INFO Master: Registering worker 192.168.1.3:52446 with 1 cores, 1024.0 MiB RAM
+26/06/20 15:27:17 WARN Master: Got heartbeat from unregistered worker worker-20260619025040-192.168.1.3-52451. Asking it to re-register.
+26/06/20 15:27:17 INFO Master: Registering worker 192.168.1.3:52451 with 1 cores, 1024.0 MiB RAM
+26/06/20 16:28:19 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/20 16:28:19 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/20 16:28:19 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/20 16:28:19 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/20 16:28:19 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/20 16:28:19 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/20 16:28:20 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/20 16:28:20 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/20 16:28:23 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/20 16:28:23 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/20 16:55:11 WARN Master: Removing worker-20260619025035-192.168.1.3-52441 because we got no heartbeat in 60000 ms
+26/06/20 16:55:11 INFO Master: Removing worker worker-20260619025035-192.168.1.3-52441 on 192.168.1.3:52441
+26/06/20 16:55:11 INFO Master: Telling app of lost worker: worker-20260619025035-192.168.1.3-52441
+26/06/20 16:55:11 WARN Master: Removing worker-20260619025037-192.168.1.3-52446 because we got no heartbeat in 60000 ms
+26/06/20 16:55:11 INFO Master: Removing worker worker-20260619025037-192.168.1.3-52446 on 192.168.1.3:52446
+26/06/20 16:55:11 INFO Master: Telling app of lost worker: worker-20260619025037-192.168.1.3-52446
+26/06/20 16:55:11 WARN Master: Removing worker-20260619025040-192.168.1.3-52451 because we got no heartbeat in 60000 ms
+26/06/20 16:55:11 INFO Master: Removing worker worker-20260619025040-192.168.1.3-52451 on 192.168.1.3:52451
+26/06/20 16:55:11 INFO Master: Telling app of lost worker: worker-20260619025040-192.168.1.3-52451
+26/06/20 16:55:11 WARN Master: Removing worker-20260619025030-192.168.1.3-52433 because we got no heartbeat in 60000 ms
+26/06/20 16:55:11 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/20 16:55:11 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/20 16:55:11 WARN Master: Removing worker-20260619025032-192.168.1.3-52437 because we got no heartbeat in 60000 ms
+26/06/20 16:55:11 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/20 16:55:11 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/20 16:55:12 WARN Master: Got heartbeat from unregistered worker worker-20260619025030-192.168.1.3-52433. Asking it to re-register.
+26/06/20 16:55:12 INFO Master: Registering worker 192.168.1.3:52433 with 1 cores, 1024.0 MiB RAM
+26/06/20 16:55:15 WARN Master: Got heartbeat from unregistered worker worker-20260619025032-192.168.1.3-52437. Asking it to re-register.
+26/06/20 16:55:15 INFO Master: Registering worker 192.168.1.3:52437 with 1 cores, 1024.0 MiB RAM
+26/06/20 16:55:17 WARN Master: Got heartbeat from unregistered worker worker-20260619025035-192.168.1.3-52441. Asking it to re-register.
+26/06/20 16:55:17 INFO Master: Registering worker 192.168.1.3:52441 with 1 cores, 1024.0 MiB RAM
+26/06/20 16:55:20 WARN Master: Got heartbeat from unregistered worker worker-20260619025037-192.168.1.3-52446. Asking it to re-register.
+26/06/20 16:55:20 INFO Master: Registering worker 192.168.1.3:52446 with 1 cores, 1024.0 MiB RAM
+26/06/20 16:55:22 WARN Master: Got heartbeat from unregistered worker worker-20260619025040-192.168.1.3-52451. Asking it to re-register.
+26/06/20 16:55:22 INFO Master: Registering worker 192.168.1.3:52451 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:08:03 INFO Master: Registering app PageRankWithGraphFrames
+26/06/20 17:08:03 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260620170803-0004
+26/06/20 17:08:03 INFO Master: Start scheduling for app app-20260620170803-0004 with rpId: 0
+26/06/20 17:08:03 INFO Master: Launching executor app-20260620170803-0004/0 on worker worker-20260619025040-192.168.1.3-52451
+26/06/20 17:08:03 INFO Master: Launching executor app-20260620170803-0004/1 on worker worker-20260619025037-192.168.1.3-52446
+26/06/20 17:08:03 INFO Master: Launching executor app-20260620170803-0004/2 on worker worker-20260619025035-192.168.1.3-52441
+26/06/20 17:08:03 INFO Master: Launching executor app-20260620170803-0004/3 on worker worker-20260619025032-192.168.1.3-52437
+26/06/20 17:08:03 INFO Master: Launching executor app-20260620170803-0004/4 on worker worker-20260619025030-192.168.1.3-52433
+26/06/20 17:08:03 INFO Master: Start scheduling for app app-20260620170803-0004 with rpId: 0
+26/06/20 17:08:03 INFO Master: Start scheduling for app app-20260620170803-0004 with rpId: 0
+26/06/20 17:08:03 INFO Master: Start scheduling for app app-20260620170803-0004 with rpId: 0
+26/06/20 17:08:03 INFO Master: Start scheduling for app app-20260620170803-0004 with rpId: 0
+26/06/20 17:08:03 INFO Master: Start scheduling for app app-20260620170803-0004 with rpId: 0
+26/06/20 17:08:19 INFO Master: Received unregister request from application app-20260620170803-0004
+26/06/20 17:08:19 INFO Master: Removing app app-20260620170803-0004
+26/06/20 17:08:20 INFO Master: 127.0.0.1:59917 got disassociated, removing it.
+26/06/20 17:08:20 INFO Master: 192.168.1.3:59915 got disassociated, removing it.
+26/06/20 17:08:20 WARN Master: Got status update for unknown executor app-20260620170803-0004/3
+26/06/20 17:08:20 WARN Master: Got status update for unknown executor app-20260620170803-0004/0
+26/06/20 17:08:20 WARN Master: Got status update for unknown executor app-20260620170803-0004/1
+26/06/20 17:08:20 WARN Master: Got status update for unknown executor app-20260620170803-0004/4
+26/06/20 17:08:20 WARN Master: Got status update for unknown executor app-20260620170803-0004/2
+26/06/20 17:09:02 INFO Master: Registering app PageRankWithGraphFrames
+26/06/20 17:09:02 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260620170902-0005
+26/06/20 17:09:02 INFO Master: Start scheduling for app app-20260620170902-0005 with rpId: 0
+26/06/20 17:09:02 INFO Master: Launching executor app-20260620170902-0005/0 on worker worker-20260619025040-192.168.1.3-52451
+26/06/20 17:09:02 INFO Master: Launching executor app-20260620170902-0005/1 on worker worker-20260619025037-192.168.1.3-52446
+26/06/20 17:09:02 INFO Master: Launching executor app-20260620170902-0005/2 on worker worker-20260619025035-192.168.1.3-52441
+26/06/20 17:09:02 INFO Master: Launching executor app-20260620170902-0005/3 on worker worker-20260619025032-192.168.1.3-52437
+26/06/20 17:09:02 INFO Master: Launching executor app-20260620170902-0005/4 on worker worker-20260619025030-192.168.1.3-52433
+26/06/20 17:09:02 INFO Master: Start scheduling for app app-20260620170902-0005 with rpId: 0
+26/06/20 17:09:02 INFO Master: Start scheduling for app app-20260620170902-0005 with rpId: 0
+26/06/20 17:09:02 INFO Master: Start scheduling for app app-20260620170902-0005 with rpId: 0
+26/06/20 17:09:02 INFO Master: Start scheduling for app app-20260620170902-0005 with rpId: 0
+26/06/20 17:09:02 INFO Master: Start scheduling for app app-20260620170902-0005 with rpId: 0
+26/06/20 17:09:17 INFO Master: Received unregister request from application app-20260620170902-0005
+26/06/20 17:09:17 INFO Master: Removing app app-20260620170902-0005
+26/06/20 17:09:17 INFO Master: 127.0.0.1:60001 got disassociated, removing it.
+26/06/20 17:09:17 INFO Master: 192.168.1.3:59998 got disassociated, removing it.
+26/06/20 17:09:17 WARN Master: Got status update for unknown executor app-20260620170902-0005/3
+26/06/20 17:09:17 WARN Master: Got status update for unknown executor app-20260620170902-0005/2
+26/06/20 17:09:17 WARN Master: Got status update for unknown executor app-20260620170902-0005/1
+26/06/20 17:09:17 WARN Master: Got status update for unknown executor app-20260620170902-0005/4
+26/06/20 17:09:18 WARN Master: Got status update for unknown executor app-20260620170902-0005/0
+26/06/20 17:17:44 INFO Master: 127.0.0.1:52449 got disassociated, removing it.
+26/06/20 17:17:44 INFO Master: 127.0.0.1:52435 got disassociated, removing it.
+26/06/20 17:17:44 INFO Master: 192.168.1.3:52446 got disassociated, removing it.
+26/06/20 17:17:44 INFO Master: Removing worker worker-20260619025037-192.168.1.3-52446 on 192.168.1.3:52446
+26/06/20 17:17:44 INFO Master: Telling app of lost worker: worker-20260619025037-192.168.1.3-52446
+26/06/20 17:17:44 INFO Master: 192.168.1.3:52433 got disassociated, removing it.
+26/06/20 17:17:44 INFO Master: Removing worker worker-20260619025030-192.168.1.3-52433 on 192.168.1.3:52433
+26/06/20 17:17:44 INFO Master: Telling app of lost worker: worker-20260619025030-192.168.1.3-52433
+26/06/20 17:17:44 INFO Master: 127.0.0.1:52439 got disassociated, removing it.
+26/06/20 17:17:44 INFO Master: 192.168.1.3:52437 got disassociated, removing it.
+26/06/20 17:17:44 INFO Master: Removing worker worker-20260619025032-192.168.1.3-52437 on 192.168.1.3:52437
+26/06/20 17:17:44 INFO Master: Telling app of lost worker: worker-20260619025032-192.168.1.3-52437
+26/06/20 17:17:44 INFO Master: 127.0.0.1:52453 got disassociated, removing it.
+26/06/20 17:17:44 INFO Master: 127.0.0.1:52443 got disassociated, removing it.
+26/06/20 17:17:44 INFO Master: 192.168.1.3:52451 got disassociated, removing it.
+26/06/20 17:17:44 INFO Master: Removing worker worker-20260619025040-192.168.1.3-52451 on 192.168.1.3:52451
+26/06/20 17:17:44 INFO Master: Telling app of lost worker: worker-20260619025040-192.168.1.3-52451
+26/06/20 17:17:44 INFO Master: 192.168.1.3:52441 got disassociated, removing it.
+26/06/20 17:17:44 INFO Master: Removing worker worker-20260619025035-192.168.1.3-52441 on 192.168.1.3:52441
+26/06/20 17:17:44 INFO Master: Telling app of lost worker: worker-20260619025035-192.168.1.3-52441
+26/06/20 17:22:26 INFO Master: Registering worker 192.168.1.3:60299 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:22:29 INFO Master: Registering worker 192.168.1.3:60303 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:22:32 INFO Master: Registering worker 192.168.1.3:60308 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:22:34 INFO Master: Registering worker 192.168.1.3:60312 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:22:37 INFO Master: Registering worker 192.168.1.3:60316 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:22:40 INFO Master: Registering worker 192.168.1.3:60320 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:22:43 INFO Master: Registering worker 192.168.1.3:60324 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:22:45 INFO Master: Registering worker 192.168.1.3:60328 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:22:48 INFO Master: Registering worker 192.168.1.3:60334 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:22:51 INFO Master: Registering worker 192.168.1.3:60338 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:22:53 INFO Master: Registering worker 192.168.1.3:60342 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:22:56 INFO Master: Registering worker 192.168.1.3:60346 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:22:58 INFO Master: Registering worker 192.168.1.3:60350 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:23:00 INFO Master: Registering worker 192.168.1.3:60354 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:23:01 INFO Master: Registering worker 192.168.1.3:60358 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:23:04 INFO Master: Registering worker 192.168.1.3:60363 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:23:08 INFO Master: Registering app PageRankWithGraphFrames
+26/06/20 17:23:08 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260620172308-0006
+26/06/20 17:23:08 INFO Master: Start scheduling for app app-20260620172308-0006 with rpId: 0
+26/06/20 17:23:08 INFO Master: Launching executor app-20260620172308-0006/0 on worker worker-20260620172304-192.168.1.3-60363
+26/06/20 17:23:08 INFO Master: Launching executor app-20260620172308-0006/1 on worker worker-20260620172301-192.168.1.3-60358
+26/06/20 17:23:08 INFO Master: Launching executor app-20260620172308-0006/2 on worker worker-20260620172259-192.168.1.3-60354
+26/06/20 17:23:08 INFO Master: Launching executor app-20260620172308-0006/3 on worker worker-20260620172258-192.168.1.3-60350
+26/06/20 17:23:08 INFO Master: Launching executor app-20260620172308-0006/4 on worker worker-20260620172255-192.168.1.3-60346
+26/06/20 17:23:08 INFO Master: Launching executor app-20260620172308-0006/5 on worker worker-20260620172253-192.168.1.3-60342
+26/06/20 17:23:08 INFO Master: Launching executor app-20260620172308-0006/6 on worker worker-20260620172250-192.168.1.3-60338
+26/06/20 17:23:08 INFO Master: Launching executor app-20260620172308-0006/7 on worker worker-20260620172248-192.168.1.3-60334
+26/06/20 17:23:08 INFO Master: Launching executor app-20260620172308-0006/8 on worker worker-20260620172244-192.168.1.3-60328
+26/06/20 17:23:08 INFO Master: Launching executor app-20260620172308-0006/9 on worker worker-20260620172242-192.168.1.3-60324
+26/06/20 17:23:08 INFO Master: Launching executor app-20260620172308-0006/10 on worker worker-20260620172239-192.168.1.3-60320
+26/06/20 17:23:08 INFO Master: Launching executor app-20260620172308-0006/11 on worker worker-20260620172236-192.168.1.3-60316
+26/06/20 17:23:08 INFO Master: Launching executor app-20260620172308-0006/12 on worker worker-20260620172234-192.168.1.3-60312
+26/06/20 17:23:08 INFO Master: Launching executor app-20260620172308-0006/13 on worker worker-20260620172231-192.168.1.3-60308
+26/06/20 17:23:08 INFO Master: Launching executor app-20260620172308-0006/14 on worker worker-20260620172229-192.168.1.3-60303
+26/06/20 17:23:08 INFO Master: Launching executor app-20260620172308-0006/15 on worker worker-20260620172225-192.168.1.3-60299
+26/06/20 17:23:09 INFO Master: Start scheduling for app app-20260620172308-0006 with rpId: 0
+26/06/20 17:23:09 INFO Master: Start scheduling for app app-20260620172308-0006 with rpId: 0
+26/06/20 17:23:09 INFO Master: Start scheduling for app app-20260620172308-0006 with rpId: 0
+26/06/20 17:23:09 INFO Master: Start scheduling for app app-20260620172308-0006 with rpId: 0
+26/06/20 17:23:09 INFO Master: Start scheduling for app app-20260620172308-0006 with rpId: 0
+26/06/20 17:23:09 INFO Master: Start scheduling for app app-20260620172308-0006 with rpId: 0
+26/06/20 17:23:09 INFO Master: Start scheduling for app app-20260620172308-0006 with rpId: 0
+26/06/20 17:23:09 INFO Master: Start scheduling for app app-20260620172308-0006 with rpId: 0
+26/06/20 17:23:09 INFO Master: Start scheduling for app app-20260620172308-0006 with rpId: 0
+26/06/20 17:23:09 INFO Master: Start scheduling for app app-20260620172308-0006 with rpId: 0
+26/06/20 17:23:09 INFO Master: Start scheduling for app app-20260620172308-0006 with rpId: 0
+26/06/20 17:23:09 INFO Master: Start scheduling for app app-20260620172308-0006 with rpId: 0
+26/06/20 17:23:09 INFO Master: Start scheduling for app app-20260620172308-0006 with rpId: 0
+26/06/20 17:23:09 INFO Master: Start scheduling for app app-20260620172308-0006 with rpId: 0
+26/06/20 17:23:09 INFO Master: Start scheduling for app app-20260620172308-0006 with rpId: 0
+26/06/20 17:23:09 INFO Master: Start scheduling for app app-20260620172308-0006 with rpId: 0
+26/06/20 17:28:52 INFO Master: Received unregister request from application app-20260620172308-0006
+26/06/20 17:28:52 INFO Master: Removing app app-20260620172308-0006
+26/06/20 17:28:53 INFO Master: 127.0.0.1:60372 got disassociated, removing it.
+26/06/20 17:28:53 INFO Master: 192.168.1.3:60370 got disassociated, removing it.
+26/06/20 17:28:55 WARN Master: Got status update for unknown executor app-20260620172308-0006/3
+26/06/20 17:28:55 WARN Master: Got status update for unknown executor app-20260620172308-0006/5
+26/06/20 17:28:55 WARN Master: Got status update for unknown executor app-20260620172308-0006/14
+26/06/20 17:28:55 WARN Master: Got status update for unknown executor app-20260620172308-0006/2
+26/06/20 17:28:55 WARN Master: Got status update for unknown executor app-20260620172308-0006/6
+26/06/20 17:28:55 WARN Master: Got status update for unknown executor app-20260620172308-0006/9
+26/06/20 17:28:55 WARN Master: Got status update for unknown executor app-20260620172308-0006/8
+26/06/20 17:28:55 WARN Master: Got status update for unknown executor app-20260620172308-0006/11
+26/06/20 17:28:55 WARN Master: Got status update for unknown executor app-20260620172308-0006/7
+26/06/20 17:28:55 WARN Master: Got status update for unknown executor app-20260620172308-0006/15
+26/06/20 17:28:55 WARN Master: Got status update for unknown executor app-20260620172308-0006/10
+26/06/20 17:28:55 WARN Master: Got status update for unknown executor app-20260620172308-0006/1
+26/06/20 17:28:55 WARN Master: Got status update for unknown executor app-20260620172308-0006/0
+26/06/20 17:28:56 WARN Master: Got status update for unknown executor app-20260620172308-0006/4
+26/06/20 17:28:56 WARN Master: Got status update for unknown executor app-20260620172308-0006/13
+26/06/20 17:28:56 WARN Master: Got status update for unknown executor app-20260620172308-0006/12
+26/06/20 17:29:04 INFO Master: 127.0.0.1:60365 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: 192.168.1.3:60363 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: Removing worker worker-20260620172304-192.168.1.3-60363 on 192.168.1.3:60363
+26/06/20 17:29:04 INFO Master: Telling app of lost worker: worker-20260620172304-192.168.1.3-60363
+26/06/20 17:29:04 INFO Master: 127.0.0.1:60314 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: 192.168.1.3:60312 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: Removing worker worker-20260620172234-192.168.1.3-60312 on 192.168.1.3:60312
+26/06/20 17:29:04 INFO Master: Telling app of lost worker: worker-20260620172234-192.168.1.3-60312
+26/06/20 17:29:04 INFO Master: 127.0.0.1:60305 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: 192.168.1.3:60303 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: Removing worker worker-20260620172229-192.168.1.3-60303 on 192.168.1.3:60303
+26/06/20 17:29:04 INFO Master: Telling app of lost worker: worker-20260620172229-192.168.1.3-60303
+26/06/20 17:29:04 INFO Master: 127.0.0.1:60348 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: 192.168.1.3:60346 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: Removing worker worker-20260620172255-192.168.1.3-60346 on 192.168.1.3:60346
+26/06/20 17:29:04 INFO Master: Telling app of lost worker: worker-20260620172255-192.168.1.3-60346
+26/06/20 17:29:04 INFO Master: 127.0.0.1:60318 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: 192.168.1.3:60316 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: Removing worker worker-20260620172236-192.168.1.3-60316 on 192.168.1.3:60316
+26/06/20 17:29:04 INFO Master: Telling app of lost worker: worker-20260620172236-192.168.1.3-60316
+26/06/20 17:29:04 INFO Master: 127.0.0.1:60352 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: 192.168.1.3:60350 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: Removing worker worker-20260620172258-192.168.1.3-60350 on 192.168.1.3:60350
+26/06/20 17:29:04 INFO Master: Telling app of lost worker: worker-20260620172258-192.168.1.3-60350
+26/06/20 17:29:04 INFO Master: 127.0.0.1:60356 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: 192.168.1.3:60354 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: Removing worker worker-20260620172259-192.168.1.3-60354 on 192.168.1.3:60354
+26/06/20 17:29:04 INFO Master: Telling app of lost worker: worker-20260620172259-192.168.1.3-60354
+26/06/20 17:29:04 INFO Master: 127.0.0.1:60330 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: 127.0.0.1:60336 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: 192.168.1.3:60334 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: Removing worker worker-20260620172248-192.168.1.3-60334 on 192.168.1.3:60334
+26/06/20 17:29:04 INFO Master: Telling app of lost worker: worker-20260620172248-192.168.1.3-60334
+26/06/20 17:29:04 INFO Master: 192.168.1.3:60328 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: Removing worker worker-20260620172244-192.168.1.3-60328 on 192.168.1.3:60328
+26/06/20 17:29:04 INFO Master: Telling app of lost worker: worker-20260620172244-192.168.1.3-60328
+26/06/20 17:29:04 INFO Master: 127.0.0.1:60310 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: 192.168.1.3:60308 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: Removing worker worker-20260620172231-192.168.1.3-60308 on 192.168.1.3:60308
+26/06/20 17:29:04 INFO Master: Telling app of lost worker: worker-20260620172231-192.168.1.3-60308
+26/06/20 17:29:04 INFO Master: 127.0.0.1:60344 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: 192.168.1.3:60342 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: Removing worker worker-20260620172253-192.168.1.3-60342 on 192.168.1.3:60342
+26/06/20 17:29:04 INFO Master: Telling app of lost worker: worker-20260620172253-192.168.1.3-60342
+26/06/20 17:29:04 INFO Master: 127.0.0.1:60340 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: 192.168.1.3:60338 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: Removing worker worker-20260620172250-192.168.1.3-60338 on 192.168.1.3:60338
+26/06/20 17:29:04 INFO Master: Telling app of lost worker: worker-20260620172250-192.168.1.3-60338
+26/06/20 17:29:04 INFO Master: 127.0.0.1:60322 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: 192.168.1.3:60320 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: Removing worker worker-20260620172239-192.168.1.3-60320 on 192.168.1.3:60320
+26/06/20 17:29:04 INFO Master: Telling app of lost worker: worker-20260620172239-192.168.1.3-60320
+26/06/20 17:29:04 INFO Master: 127.0.0.1:60301 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: 192.168.1.3:60299 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: Removing worker worker-20260620172225-192.168.1.3-60299 on 192.168.1.3:60299
+26/06/20 17:29:04 INFO Master: Telling app of lost worker: worker-20260620172225-192.168.1.3-60299
+26/06/20 17:29:04 INFO Master: 127.0.0.1:60360 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: 192.168.1.3:60358 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: Removing worker worker-20260620172301-192.168.1.3-60358 on 192.168.1.3:60358
+26/06/20 17:29:04 INFO Master: Telling app of lost worker: worker-20260620172301-192.168.1.3-60358
+26/06/20 17:29:04 INFO Master: 127.0.0.1:60326 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: 192.168.1.3:60324 got disassociated, removing it.
+26/06/20 17:29:04 INFO Master: Removing worker worker-20260620172242-192.168.1.3-60324 on 192.168.1.3:60324
+26/06/20 17:29:04 INFO Master: Telling app of lost worker: worker-20260620172242-192.168.1.3-60324
+26/06/20 17:29:07 INFO Master: Registering worker 192.168.1.3:60818 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:29:09 INFO Master: Registering worker 192.168.1.3:60822 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:29:12 INFO Master: Registering worker 192.168.1.3:60826 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:29:15 INFO Master: Registering worker 192.168.1.3:60830 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:29:17 INFO Master: Registering worker 192.168.1.3:60834 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:29:20 INFO Master: Registering worker 192.168.1.3:60838 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:29:22 INFO Master: Registering worker 192.168.1.3:60842 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:29:25 INFO Master: Registering worker 192.168.1.3:60846 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:29:28 INFO Master: Registering worker 192.168.1.3:60850 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:29:30 INFO Master: Registering worker 192.168.1.3:60854 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:29:33 INFO Master: 127.0.0.1:60828 got disassociated, removing it.
+26/06/20 17:29:33 INFO Master: 192.168.1.3:60826 got disassociated, removing it.
+26/06/20 17:29:33 INFO Master: Removing worker worker-20260620172912-192.168.1.3-60826 on 192.168.1.3:60826
+26/06/20 17:29:33 INFO Master: Telling app of lost worker: worker-20260620172912-192.168.1.3-60826
+26/06/20 17:29:33 INFO Master: 127.0.0.1:60836 got disassociated, removing it.
+26/06/20 17:29:33 INFO Master: 192.168.1.3:60834 got disassociated, removing it.
+26/06/20 17:29:33 INFO Master: Removing worker worker-20260620172917-192.168.1.3-60834 on 192.168.1.3:60834
+26/06/20 17:29:33 INFO Master: Telling app of lost worker: worker-20260620172917-192.168.1.3-60834
+26/06/20 17:29:33 INFO Master: 127.0.0.1:60832 got disassociated, removing it.
+26/06/20 17:29:33 INFO Master: 192.168.1.3:60830 got disassociated, removing it.
+26/06/20 17:29:33 INFO Master: Removing worker worker-20260620172914-192.168.1.3-60830 on 192.168.1.3:60830
+26/06/20 17:29:33 INFO Master: Telling app of lost worker: worker-20260620172914-192.168.1.3-60830
+26/06/20 17:29:33 INFO Master: 127.0.0.1:60852 got disassociated, removing it.
+26/06/20 17:29:33 INFO Master: 192.168.1.3:60850 got disassociated, removing it.
+26/06/20 17:29:33 INFO Master: Removing worker worker-20260620172927-192.168.1.3-60850 on 192.168.1.3:60850
+26/06/20 17:29:33 INFO Master: Telling app of lost worker: worker-20260620172927-192.168.1.3-60850
+26/06/20 17:29:33 INFO Master: 127.0.0.1:60840 got disassociated, removing it.
+26/06/20 17:29:33 INFO Master: 192.168.1.3:60838 got disassociated, removing it.
+26/06/20 17:29:33 INFO Master: Removing worker worker-20260620172919-192.168.1.3-60838 on 192.168.1.3:60838
+26/06/20 17:29:33 INFO Master: Telling app of lost worker: worker-20260620172919-192.168.1.3-60838
+26/06/20 17:29:33 INFO Master: 127.0.0.1:60856 got disassociated, removing it.
+26/06/20 17:29:33 INFO Master: 192.168.1.3:60854 got disassociated, removing it.
+26/06/20 17:29:33 INFO Master: Removing worker worker-20260620172930-192.168.1.3-60854 on 192.168.1.3:60854
+26/06/20 17:29:33 INFO Master: Telling app of lost worker: worker-20260620172930-192.168.1.3-60854
+26/06/20 17:29:33 INFO Master: 127.0.0.1:60824 got disassociated, removing it.
+26/06/20 17:29:33 INFO Master: 192.168.1.3:60822 got disassociated, removing it.
+26/06/20 17:29:33 INFO Master: Removing worker worker-20260620172909-192.168.1.3-60822 on 192.168.1.3:60822
+26/06/20 17:29:33 INFO Master: Telling app of lost worker: worker-20260620172909-192.168.1.3-60822
+26/06/20 17:29:33 INFO Master: 127.0.0.1:60844 got disassociated, removing it.
+26/06/20 17:29:33 INFO Master: 192.168.1.3:60842 got disassociated, removing it.
+26/06/20 17:29:33 INFO Master: Removing worker worker-20260620172922-192.168.1.3-60842 on 192.168.1.3:60842
+26/06/20 17:29:33 INFO Master: Telling app of lost worker: worker-20260620172922-192.168.1.3-60842
+26/06/20 17:29:33 INFO Master: 127.0.0.1:60848 got disassociated, removing it.
+26/06/20 17:29:33 INFO Master: 192.168.1.3:60846 got disassociated, removing it.
+26/06/20 17:29:33 INFO Master: Removing worker worker-20260620172925-192.168.1.3-60846 on 192.168.1.3:60846
+26/06/20 17:29:33 INFO Master: Telling app of lost worker: worker-20260620172925-192.168.1.3-60846
+26/06/20 17:29:33 INFO Master: 127.0.0.1:60820 got disassociated, removing it.
+26/06/20 17:29:33 INFO Master: 192.168.1.3:60818 got disassociated, removing it.
+26/06/20 17:29:33 INFO Master: Removing worker worker-20260620172907-192.168.1.3-60818 on 192.168.1.3:60818
+26/06/20 17:29:33 INFO Master: Telling app of lost worker: worker-20260620172907-192.168.1.3-60818
+26/06/20 17:29:36 INFO Master: Registering worker 192.168.1.3:60858 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:29:38 INFO Master: Registering worker 192.168.1.3:60862 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:29:41 INFO Master: Registering worker 192.168.1.3:60866 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:29:43 INFO Master: Registering worker 192.168.1.3:60870 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:29:46 INFO Master: Registering worker 192.168.1.3:60874 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:29:48 INFO Master: Registering worker 192.168.1.3:60878 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:29:51 INFO Master: Registering worker 192.168.1.3:60882 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:29:54 INFO Master: Registering worker 192.168.1.3:60886 with 1 cores, 1024.0 MiB RAM
+26/06/20 17:30:01 INFO Master: Registering app PageRankWithGraphFrames
+26/06/20 17:30:01 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260620173001-0007
+26/06/20 17:30:01 INFO Master: Start scheduling for app app-20260620173001-0007 with rpId: 0
+26/06/20 17:30:01 INFO Master: Launching executor app-20260620173001-0007/0 on worker worker-20260620172953-192.168.1.3-60886
+26/06/20 17:30:01 INFO Master: Launching executor app-20260620173001-0007/1 on worker worker-20260620172951-192.168.1.3-60882
+26/06/20 17:30:01 INFO Master: Launching executor app-20260620173001-0007/2 on worker worker-20260620172948-192.168.1.3-60878
+26/06/20 17:30:01 INFO Master: Launching executor app-20260620173001-0007/3 on worker worker-20260620172946-192.168.1.3-60874
+26/06/20 17:30:01 INFO Master: Launching executor app-20260620173001-0007/4 on worker worker-20260620172943-192.168.1.3-60870
+26/06/20 17:30:01 INFO Master: Launching executor app-20260620173001-0007/5 on worker worker-20260620172940-192.168.1.3-60866
+26/06/20 17:30:01 INFO Master: Launching executor app-20260620173001-0007/6 on worker worker-20260620172938-192.168.1.3-60862
+26/06/20 17:30:01 INFO Master: Launching executor app-20260620173001-0007/7 on worker worker-20260620172935-192.168.1.3-60858
+26/06/20 17:30:01 INFO Master: Start scheduling for app app-20260620173001-0007 with rpId: 0
+26/06/20 17:30:01 INFO Master: Start scheduling for app app-20260620173001-0007 with rpId: 0
+26/06/20 17:30:01 INFO Master: Start scheduling for app app-20260620173001-0007 with rpId: 0
+26/06/20 17:30:01 INFO Master: Start scheduling for app app-20260620173001-0007 with rpId: 0
+26/06/20 17:30:01 INFO Master: Start scheduling for app app-20260620173001-0007 with rpId: 0
+26/06/20 17:30:01 INFO Master: Start scheduling for app app-20260620173001-0007 with rpId: 0
+26/06/20 17:30:01 INFO Master: Start scheduling for app app-20260620173001-0007 with rpId: 0
+26/06/20 17:30:01 INFO Master: Start scheduling for app app-20260620173001-0007 with rpId: 0
+26/06/20 17:38:43 INFO Master: Received unregister request from application app-20260620173001-0007
+26/06/20 17:38:43 INFO Master: Removing app app-20260620173001-0007
+26/06/20 17:38:44 INFO Master: 127.0.0.1:60897 got disassociated, removing it.
+26/06/20 17:38:44 INFO Master: 192.168.1.3:60895 got disassociated, removing it.
+26/06/20 17:38:44 WARN Master: Got status update for unknown executor app-20260620173001-0007/0
+26/06/20 17:38:46 WARN Master: Got status update for unknown executor app-20260620173001-0007/7
+26/06/20 17:38:47 WARN Master: Got status update for unknown executor app-20260620173001-0007/1
+26/06/20 17:38:47 WARN Master: Got status update for unknown executor app-20260620173001-0007/6
+26/06/20 17:38:47 WARN Master: Got status update for unknown executor app-20260620173001-0007/5
+26/06/20 17:38:47 WARN Master: Got status update for unknown executor app-20260620173001-0007/3
+26/06/20 17:38:47 WARN Master: Got status update for unknown executor app-20260620173001-0007/4
+26/06/20 17:38:47 WARN Master: Got status update for unknown executor app-20260620173001-0007/2
+26/06/20 17:41:32 INFO Master: Registering app PageRankWithGraphFrames
+26/06/20 17:41:32 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260620174132-0008
+26/06/20 17:41:32 INFO Master: Start scheduling for app app-20260620174132-0008 with rpId: 0
+26/06/20 17:41:32 INFO Master: Launching executor app-20260620174132-0008/0 on worker worker-20260620172953-192.168.1.3-60886
+26/06/20 17:41:32 INFO Master: Launching executor app-20260620174132-0008/1 on worker worker-20260620172951-192.168.1.3-60882
+26/06/20 17:41:32 INFO Master: Launching executor app-20260620174132-0008/2 on worker worker-20260620172948-192.168.1.3-60878
+26/06/20 17:41:32 INFO Master: Launching executor app-20260620174132-0008/3 on worker worker-20260620172946-192.168.1.3-60874
+26/06/20 17:41:32 INFO Master: Launching executor app-20260620174132-0008/4 on worker worker-20260620172943-192.168.1.3-60870
+26/06/20 17:41:32 INFO Master: Launching executor app-20260620174132-0008/5 on worker worker-20260620172940-192.168.1.3-60866
+26/06/20 17:41:32 INFO Master: Launching executor app-20260620174132-0008/6 on worker worker-20260620172938-192.168.1.3-60862
+26/06/20 17:41:32 INFO Master: Launching executor app-20260620174132-0008/7 on worker worker-20260620172935-192.168.1.3-60858
+26/06/20 17:41:32 INFO Master: Start scheduling for app app-20260620174132-0008 with rpId: 0
+26/06/20 17:41:32 INFO Master: Start scheduling for app app-20260620174132-0008 with rpId: 0
+26/06/20 17:41:32 INFO Master: Start scheduling for app app-20260620174132-0008 with rpId: 0
+26/06/20 17:41:32 INFO Master: Start scheduling for app app-20260620174132-0008 with rpId: 0
+26/06/20 17:41:32 INFO Master: Start scheduling for app app-20260620174132-0008 with rpId: 0
+26/06/20 17:41:32 INFO Master: Start scheduling for app app-20260620174132-0008 with rpId: 0
+26/06/20 17:41:32 INFO Master: Start scheduling for app app-20260620174132-0008 with rpId: 0
+26/06/20 17:41:32 INFO Master: Start scheduling for app app-20260620174132-0008 with rpId: 0
+26/06/20 17:50:55 INFO Master: Received unregister request from application app-20260620174132-0008
+26/06/20 17:50:55 INFO Master: Removing app app-20260620174132-0008
+26/06/20 17:50:55 INFO Master: 127.0.0.1:61140 got disassociated, removing it.
+26/06/20 17:50:55 INFO Master: 192.168.1.3:61138 got disassociated, removing it.
+26/06/20 17:50:56 WARN Master: Got status update for unknown executor app-20260620174132-0008/5
+26/06/20 17:50:56 WARN Master: Got status update for unknown executor app-20260620174132-0008/4
+26/06/20 17:50:56 WARN Master: Got status update for unknown executor app-20260620174132-0008/2
+26/06/20 17:50:56 WARN Master: Got status update for unknown executor app-20260620174132-0008/1
+26/06/20 17:50:56 WARN Master: Got status update for unknown executor app-20260620174132-0008/3
+26/06/20 17:50:58 WARN Master: Got status update for unknown executor app-20260620174132-0008/0
+26/06/20 17:50:58 WARN Master: Got status update for unknown executor app-20260620174132-0008/6
+26/06/20 17:50:58 WARN Master: Got status update for unknown executor app-20260620174132-0008/7
+26/06/20 17:57:24 INFO Master: Registering app PageRankWithGraphFrames
+26/06/20 17:57:24 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260620175724-0009
+26/06/20 17:57:24 INFO Master: Start scheduling for app app-20260620175724-0009 with rpId: 0
+26/06/20 17:57:24 INFO Master: Launching executor app-20260620175724-0009/0 on worker worker-20260620172953-192.168.1.3-60886
+26/06/20 17:57:24 INFO Master: Launching executor app-20260620175724-0009/1 on worker worker-20260620172951-192.168.1.3-60882
+26/06/20 17:57:24 INFO Master: Launching executor app-20260620175724-0009/2 on worker worker-20260620172948-192.168.1.3-60878
+26/06/20 17:57:24 INFO Master: Launching executor app-20260620175724-0009/3 on worker worker-20260620172946-192.168.1.3-60874
+26/06/20 17:57:24 INFO Master: Launching executor app-20260620175724-0009/4 on worker worker-20260620172943-192.168.1.3-60870
+26/06/20 17:57:24 INFO Master: Launching executor app-20260620175724-0009/5 on worker worker-20260620172940-192.168.1.3-60866
+26/06/20 17:57:24 INFO Master: Launching executor app-20260620175724-0009/6 on worker worker-20260620172938-192.168.1.3-60862
+26/06/20 17:57:24 INFO Master: Launching executor app-20260620175724-0009/7 on worker worker-20260620172935-192.168.1.3-60858
+26/06/20 17:57:24 INFO Master: Start scheduling for app app-20260620175724-0009 with rpId: 0
+26/06/20 17:57:24 INFO Master: Start scheduling for app app-20260620175724-0009 with rpId: 0
+26/06/20 17:57:24 INFO Master: Start scheduling for app app-20260620175724-0009 with rpId: 0
+26/06/20 17:57:24 INFO Master: Start scheduling for app app-20260620175724-0009 with rpId: 0
+26/06/20 17:57:24 INFO Master: Start scheduling for app app-20260620175724-0009 with rpId: 0
+26/06/20 17:57:24 INFO Master: Start scheduling for app app-20260620175724-0009 with rpId: 0
+26/06/20 17:57:24 INFO Master: Start scheduling for app app-20260620175724-0009 with rpId: 0
+26/06/20 17:57:24 INFO Master: Start scheduling for app app-20260620175724-0009 with rpId: 0
+26/06/20 17:57:47 INFO Master: Received unregister request from application app-20260620175724-0009
+26/06/20 17:57:47 INFO Master: Removing app app-20260620175724-0009
+26/06/20 17:57:47 INFO Master: 127.0.0.1:61579 got disassociated, removing it.
+26/06/20 17:57:47 INFO Master: 192.168.1.3:61577 got disassociated, removing it.
+26/06/20 17:57:47 WARN Master: Got status update for unknown executor app-20260620175724-0009/3
+26/06/20 17:57:47 WARN Master: Got status update for unknown executor app-20260620175724-0009/0
+26/06/20 17:57:47 WARN Master: Got status update for unknown executor app-20260620175724-0009/2
+26/06/20 17:57:47 WARN Master: Got status update for unknown executor app-20260620175724-0009/7
+26/06/20 17:57:47 WARN Master: Got status update for unknown executor app-20260620175724-0009/5
+26/06/20 17:57:47 WARN Master: Got status update for unknown executor app-20260620175724-0009/6
+26/06/20 17:57:47 WARN Master: Got status update for unknown executor app-20260620175724-0009/4
+26/06/20 17:57:47 WARN Master: Got status update for unknown executor app-20260620175724-0009/1
+26/06/20 17:57:52 INFO Master: Registering app PageRankWithGraphFrames
+26/06/20 17:57:52 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260620175752-0010
+26/06/20 17:57:52 INFO Master: Start scheduling for app app-20260620175752-0010 with rpId: 0
+26/06/20 17:57:52 INFO Master: Launching executor app-20260620175752-0010/0 on worker worker-20260620172953-192.168.1.3-60886
+26/06/20 17:57:52 INFO Master: Launching executor app-20260620175752-0010/1 on worker worker-20260620172951-192.168.1.3-60882
+26/06/20 17:57:52 INFO Master: Launching executor app-20260620175752-0010/2 on worker worker-20260620172948-192.168.1.3-60878
+26/06/20 17:57:52 INFO Master: Launching executor app-20260620175752-0010/3 on worker worker-20260620172946-192.168.1.3-60874
+26/06/20 17:57:52 INFO Master: Launching executor app-20260620175752-0010/4 on worker worker-20260620172943-192.168.1.3-60870
+26/06/20 17:57:52 INFO Master: Launching executor app-20260620175752-0010/5 on worker worker-20260620172940-192.168.1.3-60866
+26/06/20 17:57:52 INFO Master: Launching executor app-20260620175752-0010/6 on worker worker-20260620172938-192.168.1.3-60862
+26/06/20 17:57:52 INFO Master: Launching executor app-20260620175752-0010/7 on worker worker-20260620172935-192.168.1.3-60858
+26/06/20 17:57:52 INFO Master: Start scheduling for app app-20260620175752-0010 with rpId: 0
+26/06/20 17:57:52 INFO Master: Start scheduling for app app-20260620175752-0010 with rpId: 0
+26/06/20 17:57:52 INFO Master: Start scheduling for app app-20260620175752-0010 with rpId: 0
+26/06/20 17:57:52 INFO Master: Start scheduling for app app-20260620175752-0010 with rpId: 0
+26/06/20 17:57:52 INFO Master: Start scheduling for app app-20260620175752-0010 with rpId: 0
+26/06/20 17:57:52 INFO Master: Start scheduling for app app-20260620175752-0010 with rpId: 0
+26/06/20 17:57:52 INFO Master: Start scheduling for app app-20260620175752-0010 with rpId: 0
+26/06/20 17:57:52 INFO Master: Start scheduling for app app-20260620175752-0010 with rpId: 0
+26/06/20 17:59:38 INFO Master: Received unregister request from application app-20260620175752-0010
+26/06/20 17:59:38 INFO Master: Removing app app-20260620175752-0010
+26/06/20 17:59:38 INFO Master: 127.0.0.1:61687 got disassociated, removing it.
+26/06/20 17:59:38 INFO Master: 192.168.1.3:61685 got disassociated, removing it.
+26/06/20 17:59:39 WARN Master: Got status update for unknown executor app-20260620175752-0010/1
+26/06/20 17:59:39 WARN Master: Got status update for unknown executor app-20260620175752-0010/3
+26/06/20 17:59:39 WARN Master: Got status update for unknown executor app-20260620175752-0010/4
+26/06/20 17:59:39 WARN Master: Got status update for unknown executor app-20260620175752-0010/0
+26/06/20 17:59:39 WARN Master: Got status update for unknown executor app-20260620175752-0010/2
+26/06/20 17:59:39 WARN Master: Got status update for unknown executor app-20260620175752-0010/7
+26/06/20 17:59:39 WARN Master: Got status update for unknown executor app-20260620175752-0010/5
+26/06/20 17:59:39 WARN Master: Got status update for unknown executor app-20260620175752-0010/6
+26/06/20 17:59:43 INFO Master: Registering app PageRankWithGraphFrames
+26/06/20 17:59:43 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260620175943-0011
+26/06/20 17:59:43 INFO Master: Start scheduling for app app-20260620175943-0011 with rpId: 0
+26/06/20 17:59:43 INFO Master: Launching executor app-20260620175943-0011/0 on worker worker-20260620172953-192.168.1.3-60886
+26/06/20 17:59:43 INFO Master: Launching executor app-20260620175943-0011/1 on worker worker-20260620172951-192.168.1.3-60882
+26/06/20 17:59:43 INFO Master: Launching executor app-20260620175943-0011/2 on worker worker-20260620172948-192.168.1.3-60878
+26/06/20 17:59:43 INFO Master: Launching executor app-20260620175943-0011/3 on worker worker-20260620172946-192.168.1.3-60874
+26/06/20 17:59:43 INFO Master: Launching executor app-20260620175943-0011/4 on worker worker-20260620172943-192.168.1.3-60870
+26/06/20 17:59:43 INFO Master: Launching executor app-20260620175943-0011/5 on worker worker-20260620172940-192.168.1.3-60866
+26/06/20 17:59:43 INFO Master: Launching executor app-20260620175943-0011/6 on worker worker-20260620172938-192.168.1.3-60862
+26/06/20 17:59:43 INFO Master: Launching executor app-20260620175943-0011/7 on worker worker-20260620172935-192.168.1.3-60858
+26/06/20 17:59:43 INFO Master: Start scheduling for app app-20260620175943-0011 with rpId: 0
+26/06/20 17:59:43 INFO Master: Start scheduling for app app-20260620175943-0011 with rpId: 0
+26/06/20 17:59:43 INFO Master: Start scheduling for app app-20260620175943-0011 with rpId: 0
+26/06/20 17:59:43 INFO Master: Start scheduling for app app-20260620175943-0011 with rpId: 0
+26/06/20 17:59:43 INFO Master: Start scheduling for app app-20260620175943-0011 with rpId: 0
+26/06/20 17:59:43 INFO Master: Start scheduling for app app-20260620175943-0011 with rpId: 0
+26/06/20 17:59:43 INFO Master: Start scheduling for app app-20260620175943-0011 with rpId: 0
+26/06/20 17:59:43 INFO Master: Start scheduling for app app-20260620175943-0011 with rpId: 0
+26/06/20 18:09:00 INFO Master: Received unregister request from application app-20260620175943-0011
+26/06/20 18:09:00 INFO Master: Removing app app-20260620175943-0011
+26/06/20 18:09:01 INFO Master: 127.0.0.1:61838 got disassociated, removing it.
+26/06/20 18:09:01 INFO Master: 192.168.1.3:61836 got disassociated, removing it.
+26/06/20 18:09:01 WARN Master: Got status update for unknown executor app-20260620175943-0011/5
+26/06/20 18:09:01 WARN Master: Got status update for unknown executor app-20260620175943-0011/7
+26/06/20 18:09:01 WARN Master: Got status update for unknown executor app-20260620175943-0011/4
+26/06/20 18:09:01 WARN Master: Got status update for unknown executor app-20260620175943-0011/6
+26/06/20 18:09:01 WARN Master: Got status update for unknown executor app-20260620175943-0011/1
+26/06/20 18:09:01 WARN Master: Got status update for unknown executor app-20260620175943-0011/0
+26/06/20 18:09:01 WARN Master: Got status update for unknown executor app-20260620175943-0011/2
+26/06/20 18:09:01 WARN Master: Got status update for unknown executor app-20260620175943-0011/3
+26/06/20 18:10:21 INFO Master: Registering app PageRankWithGraphFrames
+26/06/20 18:10:21 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260620181021-0012
+26/06/20 18:10:21 INFO Master: Start scheduling for app app-20260620181021-0012 with rpId: 0
+26/06/20 18:10:21 INFO Master: Launching executor app-20260620181021-0012/0 on worker worker-20260620172953-192.168.1.3-60886
+26/06/20 18:10:21 INFO Master: Launching executor app-20260620181021-0012/1 on worker worker-20260620172951-192.168.1.3-60882
+26/06/20 18:10:21 INFO Master: Launching executor app-20260620181021-0012/2 on worker worker-20260620172948-192.168.1.3-60878
+26/06/20 18:10:21 INFO Master: Launching executor app-20260620181021-0012/3 on worker worker-20260620172946-192.168.1.3-60874
+26/06/20 18:10:21 INFO Master: Launching executor app-20260620181021-0012/4 on worker worker-20260620172943-192.168.1.3-60870
+26/06/20 18:10:21 INFO Master: Launching executor app-20260620181021-0012/5 on worker worker-20260620172940-192.168.1.3-60866
+26/06/20 18:10:21 INFO Master: Launching executor app-20260620181021-0012/6 on worker worker-20260620172938-192.168.1.3-60862
+26/06/20 18:10:21 INFO Master: Launching executor app-20260620181021-0012/7 on worker worker-20260620172935-192.168.1.3-60858
+26/06/20 18:10:21 INFO Master: Start scheduling for app app-20260620181021-0012 with rpId: 0
+26/06/20 18:10:21 INFO Master: Start scheduling for app app-20260620181021-0012 with rpId: 0
+26/06/20 18:10:21 INFO Master: Start scheduling for app app-20260620181021-0012 with rpId: 0
+26/06/20 18:10:21 INFO Master: Start scheduling for app app-20260620181021-0012 with rpId: 0
+26/06/20 18:10:21 INFO Master: Start scheduling for app app-20260620181021-0012 with rpId: 0
+26/06/20 18:10:21 INFO Master: Start scheduling for app app-20260620181021-0012 with rpId: 0
+26/06/20 18:10:21 INFO Master: Start scheduling for app app-20260620181021-0012 with rpId: 0
+26/06/20 18:10:21 INFO Master: Start scheduling for app app-20260620181021-0012 with rpId: 0
+26/06/20 18:12:04 INFO Master: Received unregister request from application app-20260620181021-0012
+26/06/20 18:12:04 INFO Master: Removing app app-20260620181021-0012
+26/06/20 18:12:05 INFO Master: 127.0.0.1:62134 got disassociated, removing it.
+26/06/20 18:12:05 INFO Master: 192.168.1.3:62132 got disassociated, removing it.
+26/06/20 18:12:05 WARN Master: Got status update for unknown executor app-20260620181021-0012/6
+26/06/20 18:12:05 WARN Master: Got status update for unknown executor app-20260620181021-0012/7
+26/06/20 18:12:05 WARN Master: Got status update for unknown executor app-20260620181021-0012/2
+26/06/20 18:12:05 WARN Master: Got status update for unknown executor app-20260620181021-0012/5
+26/06/20 18:12:05 WARN Master: Got status update for unknown executor app-20260620181021-0012/1
+26/06/20 18:12:05 WARN Master: Got status update for unknown executor app-20260620181021-0012/4
+26/06/20 18:12:05 WARN Master: Got status update for unknown executor app-20260620181021-0012/0
+26/06/20 18:12:05 WARN Master: Got status update for unknown executor app-20260620181021-0012/3
+26/06/20 18:12:09 INFO Master: Registering app PageRankWithGraphFrames
+26/06/20 18:12:09 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260620181209-0013
+26/06/20 18:12:09 INFO Master: Start scheduling for app app-20260620181209-0013 with rpId: 0
+26/06/20 18:12:09 INFO Master: Launching executor app-20260620181209-0013/0 on worker worker-20260620172953-192.168.1.3-60886
+26/06/20 18:12:09 INFO Master: Launching executor app-20260620181209-0013/1 on worker worker-20260620172951-192.168.1.3-60882
+26/06/20 18:12:09 INFO Master: Launching executor app-20260620181209-0013/2 on worker worker-20260620172948-192.168.1.3-60878
+26/06/20 18:12:09 INFO Master: Launching executor app-20260620181209-0013/3 on worker worker-20260620172946-192.168.1.3-60874
+26/06/20 18:12:09 INFO Master: Launching executor app-20260620181209-0013/4 on worker worker-20260620172943-192.168.1.3-60870
+26/06/20 18:12:09 INFO Master: Launching executor app-20260620181209-0013/5 on worker worker-20260620172940-192.168.1.3-60866
+26/06/20 18:12:09 INFO Master: Launching executor app-20260620181209-0013/6 on worker worker-20260620172938-192.168.1.3-60862
+26/06/20 18:12:09 INFO Master: Launching executor app-20260620181209-0013/7 on worker worker-20260620172935-192.168.1.3-60858
+26/06/20 18:12:09 INFO Master: Start scheduling for app app-20260620181209-0013 with rpId: 0
+26/06/20 18:12:09 INFO Master: Start scheduling for app app-20260620181209-0013 with rpId: 0
+26/06/20 18:12:09 INFO Master: Start scheduling for app app-20260620181209-0013 with rpId: 0
+26/06/20 18:12:09 INFO Master: Start scheduling for app app-20260620181209-0013 with rpId: 0
+26/06/20 18:12:09 INFO Master: Start scheduling for app app-20260620181209-0013 with rpId: 0
+26/06/20 18:12:09 INFO Master: Start scheduling for app app-20260620181209-0013 with rpId: 0
+26/06/20 18:12:09 INFO Master: Start scheduling for app app-20260620181209-0013 with rpId: 0
+26/06/20 18:12:09 INFO Master: Start scheduling for app app-20260620181209-0013 with rpId: 0
+26/06/20 18:12:21 INFO Master: Received unregister request from application app-20260620181209-0013
+26/06/20 18:12:21 INFO Master: Removing app app-20260620181209-0013
+26/06/20 18:12:21 WARN Master: Got status update for unknown executor app-20260620181209-0013/6
+26/06/20 18:12:21 WARN Master: Got status update for unknown executor app-20260620181209-0013/4
+26/06/20 18:12:21 INFO Master: 127.0.0.1:62267 got disassociated, removing it.
+26/06/20 18:12:21 INFO Master: 192.168.1.3:62265 got disassociated, removing it.
+26/06/20 18:12:21 WARN Master: Got status update for unknown executor app-20260620181209-0013/2
+26/06/20 18:12:21 WARN Master: Got status update for unknown executor app-20260620181209-0013/3
+26/06/20 18:12:21 WARN Master: Got status update for unknown executor app-20260620181209-0013/7
+26/06/20 18:12:21 WARN Master: Got status update for unknown executor app-20260620181209-0013/1
+26/06/20 18:12:21 WARN Master: Got status update for unknown executor app-20260620181209-0013/0
+26/06/20 18:12:21 WARN Master: Got status update for unknown executor app-20260620181209-0013/5
+26/06/20 18:13:21 INFO Master: Registering app PageRankWithGraphFrames
+26/06/20 18:13:21 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260620181321-0014
+26/06/20 18:13:21 INFO Master: Start scheduling for app app-20260620181321-0014 with rpId: 0
+26/06/20 18:13:21 INFO Master: Launching executor app-20260620181321-0014/0 on worker worker-20260620172953-192.168.1.3-60886
+26/06/20 18:13:21 INFO Master: Launching executor app-20260620181321-0014/1 on worker worker-20260620172951-192.168.1.3-60882
+26/06/20 18:13:21 INFO Master: Launching executor app-20260620181321-0014/2 on worker worker-20260620172948-192.168.1.3-60878
+26/06/20 18:13:21 INFO Master: Launching executor app-20260620181321-0014/3 on worker worker-20260620172946-192.168.1.3-60874
+26/06/20 18:13:21 INFO Master: Launching executor app-20260620181321-0014/4 on worker worker-20260620172943-192.168.1.3-60870
+26/06/20 18:13:21 INFO Master: Launching executor app-20260620181321-0014/5 on worker worker-20260620172940-192.168.1.3-60866
+26/06/20 18:13:21 INFO Master: Launching executor app-20260620181321-0014/6 on worker worker-20260620172938-192.168.1.3-60862
+26/06/20 18:13:21 INFO Master: Launching executor app-20260620181321-0014/7 on worker worker-20260620172935-192.168.1.3-60858
+26/06/20 18:13:21 INFO Master: Start scheduling for app app-20260620181321-0014 with rpId: 0
+26/06/20 18:13:21 INFO Master: Start scheduling for app app-20260620181321-0014 with rpId: 0
+26/06/20 18:13:21 INFO Master: Start scheduling for app app-20260620181321-0014 with rpId: 0
+26/06/20 18:13:21 INFO Master: Start scheduling for app app-20260620181321-0014 with rpId: 0
+26/06/20 18:13:21 INFO Master: Start scheduling for app app-20260620181321-0014 with rpId: 0
+26/06/20 18:13:21 INFO Master: Start scheduling for app app-20260620181321-0014 with rpId: 0
+26/06/20 18:13:21 INFO Master: Start scheduling for app app-20260620181321-0014 with rpId: 0
+26/06/20 18:13:21 INFO Master: Start scheduling for app app-20260620181321-0014 with rpId: 0
+26/06/20 18:14:06 INFO Master: Received unregister request from application app-20260620181321-0014
+26/06/20 18:14:06 INFO Master: Removing app app-20260620181321-0014
+26/06/20 18:14:06 INFO Master: 127.0.0.1:62348 got disassociated, removing it.
+26/06/20 18:14:06 INFO Master: 192.168.1.3:62346 got disassociated, removing it.
+26/06/20 18:14:06 WARN Master: Got status update for unknown executor app-20260620181321-0014/2
+26/06/20 18:14:06 WARN Master: Got status update for unknown executor app-20260620181321-0014/0
+26/06/20 18:14:06 WARN Master: Got status update for unknown executor app-20260620181321-0014/7
+26/06/20 18:14:06 WARN Master: Got status update for unknown executor app-20260620181321-0014/4
+26/06/20 18:14:06 WARN Master: Got status update for unknown executor app-20260620181321-0014/1
+26/06/20 18:14:06 WARN Master: Got status update for unknown executor app-20260620181321-0014/3
+26/06/20 18:14:06 WARN Master: Got status update for unknown executor app-20260620181321-0014/6
+26/06/20 18:14:06 WARN Master: Got status update for unknown executor app-20260620181321-0014/5
+26/06/20 18:14:11 INFO Master: Registering app PageRankWithGraphFrames
+26/06/20 18:14:11 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260620181411-0015
+26/06/20 18:14:11 INFO Master: Start scheduling for app app-20260620181411-0015 with rpId: 0
+26/06/20 18:14:11 INFO Master: Launching executor app-20260620181411-0015/0 on worker worker-20260620172953-192.168.1.3-60886
+26/06/20 18:14:11 INFO Master: Launching executor app-20260620181411-0015/1 on worker worker-20260620172951-192.168.1.3-60882
+26/06/20 18:14:11 INFO Master: Launching executor app-20260620181411-0015/2 on worker worker-20260620172948-192.168.1.3-60878
+26/06/20 18:14:11 INFO Master: Launching executor app-20260620181411-0015/3 on worker worker-20260620172946-192.168.1.3-60874
+26/06/20 18:14:11 INFO Master: Launching executor app-20260620181411-0015/4 on worker worker-20260620172943-192.168.1.3-60870
+26/06/20 18:14:11 INFO Master: Launching executor app-20260620181411-0015/5 on worker worker-20260620172940-192.168.1.3-60866
+26/06/20 18:14:11 INFO Master: Launching executor app-20260620181411-0015/6 on worker worker-20260620172938-192.168.1.3-60862
+26/06/20 18:14:11 INFO Master: Launching executor app-20260620181411-0015/7 on worker worker-20260620172935-192.168.1.3-60858
+26/06/20 18:14:11 INFO Master: Start scheduling for app app-20260620181411-0015 with rpId: 0
+26/06/20 18:14:11 INFO Master: Start scheduling for app app-20260620181411-0015 with rpId: 0
+26/06/20 18:14:11 INFO Master: Start scheduling for app app-20260620181411-0015 with rpId: 0
+26/06/20 18:14:11 INFO Master: Start scheduling for app app-20260620181411-0015 with rpId: 0
+26/06/20 18:14:11 INFO Master: Start scheduling for app app-20260620181411-0015 with rpId: 0
+26/06/20 18:14:11 INFO Master: Start scheduling for app app-20260620181411-0015 with rpId: 0
+26/06/20 18:14:11 INFO Master: Start scheduling for app app-20260620181411-0015 with rpId: 0
+26/06/20 18:14:11 INFO Master: Start scheduling for app app-20260620181411-0015 with rpId: 0
+26/06/20 18:15:57 INFO Master: Received unregister request from application app-20260620181411-0015
+26/06/20 18:15:57 INFO Master: Removing app app-20260620181411-0015
+26/06/20 18:15:58 INFO Master: 127.0.0.1:62481 got disassociated, removing it.
+26/06/20 18:15:58 INFO Master: 192.168.1.3:62479 got disassociated, removing it.
+26/06/20 18:15:58 WARN Master: Got status update for unknown executor app-20260620181411-0015/0
+26/06/20 18:15:58 WARN Master: Got status update for unknown executor app-20260620181411-0015/5
+26/06/20 18:15:58 WARN Master: Got status update for unknown executor app-20260620181411-0015/1
+26/06/20 18:15:58 WARN Master: Got status update for unknown executor app-20260620181411-0015/3
+26/06/20 18:15:58 WARN Master: Got status update for unknown executor app-20260620181411-0015/4
+26/06/20 18:15:58 WARN Master: Got status update for unknown executor app-20260620181411-0015/6
+26/06/20 18:15:58 WARN Master: Got status update for unknown executor app-20260620181411-0015/2
+26/06/20 18:15:58 WARN Master: Got status update for unknown executor app-20260620181411-0015/7
+26/06/20 18:18:36 INFO Master: Registering app PageRankWithGraphFrames
+26/06/20 18:18:36 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260620181836-0016
+26/06/20 18:18:36 INFO Master: Start scheduling for app app-20260620181836-0016 with rpId: 0
+26/06/20 18:18:36 INFO Master: Launching executor app-20260620181836-0016/0 on worker worker-20260620172953-192.168.1.3-60886
+26/06/20 18:18:36 INFO Master: Launching executor app-20260620181836-0016/1 on worker worker-20260620172951-192.168.1.3-60882
+26/06/20 18:18:36 INFO Master: Launching executor app-20260620181836-0016/2 on worker worker-20260620172948-192.168.1.3-60878
+26/06/20 18:18:36 INFO Master: Launching executor app-20260620181836-0016/3 on worker worker-20260620172946-192.168.1.3-60874
+26/06/20 18:18:36 INFO Master: Launching executor app-20260620181836-0016/4 on worker worker-20260620172943-192.168.1.3-60870
+26/06/20 18:18:36 INFO Master: Launching executor app-20260620181836-0016/5 on worker worker-20260620172940-192.168.1.3-60866
+26/06/20 18:18:36 INFO Master: Launching executor app-20260620181836-0016/6 on worker worker-20260620172938-192.168.1.3-60862
+26/06/20 18:18:36 INFO Master: Launching executor app-20260620181836-0016/7 on worker worker-20260620172935-192.168.1.3-60858
+26/06/20 18:18:36 INFO Master: Start scheduling for app app-20260620181836-0016 with rpId: 0
+26/06/20 18:18:36 INFO Master: Start scheduling for app app-20260620181836-0016 with rpId: 0
+26/06/20 18:18:36 INFO Master: Start scheduling for app app-20260620181836-0016 with rpId: 0
+26/06/20 18:18:36 INFO Master: Start scheduling for app app-20260620181836-0016 with rpId: 0
+26/06/20 18:18:36 INFO Master: Start scheduling for app app-20260620181836-0016 with rpId: 0
+26/06/20 18:18:36 INFO Master: Start scheduling for app app-20260620181836-0016 with rpId: 0
+26/06/20 18:18:36 INFO Master: Start scheduling for app app-20260620181836-0016 with rpId: 0
+26/06/20 18:18:36 INFO Master: Start scheduling for app app-20260620181836-0016 with rpId: 0
+26/06/20 18:21:24 INFO Master: Received unregister request from application app-20260620181836-0016
+26/06/20 18:21:24 INFO Master: Removing app app-20260620181836-0016
+26/06/20 18:21:25 INFO Master: 127.0.0.1:62747 got disassociated, removing it.
+26/06/20 18:21:25 INFO Master: 192.168.1.3:62745 got disassociated, removing it.
+26/06/20 18:21:25 WARN Master: Got status update for unknown executor app-20260620181836-0016/4
+26/06/20 18:21:25 WARN Master: Got status update for unknown executor app-20260620181836-0016/0
+26/06/20 18:21:25 WARN Master: Got status update for unknown executor app-20260620181836-0016/3
+26/06/20 18:21:25 WARN Master: Got status update for unknown executor app-20260620181836-0016/6
+26/06/20 18:21:25 WARN Master: Got status update for unknown executor app-20260620181836-0016/2
+26/06/20 18:21:25 WARN Master: Got status update for unknown executor app-20260620181836-0016/7
+26/06/20 18:21:25 WARN Master: Got status update for unknown executor app-20260620181836-0016/5
+26/06/20 18:21:25 WARN Master: Got status update for unknown executor app-20260620181836-0016/1
+26/06/20 18:23:20 INFO Master: 127.0.0.1:60888 got disassociated, removing it.
+26/06/20 18:23:20 INFO Master: 192.168.1.3:60886 got disassociated, removing it.
+26/06/20 18:23:20 INFO Master: Removing worker worker-20260620172953-192.168.1.3-60886 on 192.168.1.3:60886
+26/06/20 18:23:20 INFO Master: Telling app of lost worker: worker-20260620172953-192.168.1.3-60886
+26/06/20 18:23:20 INFO Master: 127.0.0.1:60880 got disassociated, removing it.
+26/06/20 18:23:20 INFO Master: 192.168.1.3:60878 got disassociated, removing it.
+26/06/20 18:23:20 INFO Master: Removing worker worker-20260620172948-192.168.1.3-60878 on 192.168.1.3:60878
+26/06/20 18:23:20 INFO Master: Telling app of lost worker: worker-20260620172948-192.168.1.3-60878
+26/06/20 18:23:20 INFO Master: 127.0.0.1:60876 got disassociated, removing it.
+26/06/20 18:23:20 INFO Master: 192.168.1.3:60874 got disassociated, removing it.
+26/06/20 18:23:20 INFO Master: Removing worker worker-20260620172946-192.168.1.3-60874 on 192.168.1.3:60874
+26/06/20 18:23:20 INFO Master: Telling app of lost worker: worker-20260620172946-192.168.1.3-60874
+26/06/20 18:23:20 INFO Master: 127.0.0.1:60860 got disassociated, removing it.
+26/06/20 18:23:20 INFO Master: 192.168.1.3:60858 got disassociated, removing it.
+26/06/20 18:23:20 INFO Master: Removing worker worker-20260620172935-192.168.1.3-60858 on 192.168.1.3:60858
+26/06/20 18:23:20 INFO Master: Telling app of lost worker: worker-20260620172935-192.168.1.3-60858
+26/06/20 18:23:20 INFO Master: 127.0.0.1:60868 got disassociated, removing it.
+26/06/20 18:23:20 INFO Master: 192.168.1.3:60866 got disassociated, removing it.
+26/06/20 18:23:20 INFO Master: Removing worker worker-20260620172940-192.168.1.3-60866 on 192.168.1.3:60866
+26/06/20 18:23:20 INFO Master: Telling app of lost worker: worker-20260620172940-192.168.1.3-60866
+26/06/20 18:23:20 INFO Master: 127.0.0.1:60884 got disassociated, removing it.
+26/06/20 18:23:20 INFO Master: 192.168.1.3:60882 got disassociated, removing it.
+26/06/20 18:23:20 INFO Master: Removing worker worker-20260620172951-192.168.1.3-60882 on 192.168.1.3:60882
+26/06/20 18:23:20 INFO Master: Telling app of lost worker: worker-20260620172951-192.168.1.3-60882
+26/06/20 18:23:20 INFO Master: 127.0.0.1:60872 got disassociated, removing it.
+26/06/20 18:23:20 INFO Master: 192.168.1.3:60870 got disassociated, removing it.
+26/06/20 18:23:20 INFO Master: Removing worker worker-20260620172943-192.168.1.3-60870 on 192.168.1.3:60870
+26/06/20 18:23:20 INFO Master: Telling app of lost worker: worker-20260620172943-192.168.1.3-60870
+26/06/20 18:23:20 INFO Master: 127.0.0.1:60864 got disassociated, removing it.
+26/06/20 18:23:20 INFO Master: 192.168.1.3:60862 got disassociated, removing it.
+26/06/20 18:23:20 INFO Master: Removing worker worker-20260620172938-192.168.1.3-60862 on 192.168.1.3:60862
+26/06/20 18:23:20 INFO Master: Telling app of lost worker: worker-20260620172938-192.168.1.3-60862
+26/06/20 18:23:30 INFO Master: Registering worker 192.168.1.3:62953 with 1 cores, 1024.0 MiB RAM
+26/06/20 18:23:32 INFO Master: Registering worker 192.168.1.3:62957 with 1 cores, 1024.0 MiB RAM
+26/06/20 18:23:35 INFO Master: Registering worker 192.168.1.3:62961 with 1 cores, 1024.0 MiB RAM
+26/06/20 18:23:37 INFO Master: Registering worker 192.168.1.3:62966 with 1 cores, 1024.0 MiB RAM
+26/06/20 18:23:40 INFO Master: Registering worker 192.168.1.3:62971 with 1 cores, 1024.0 MiB RAM
+26/06/20 18:24:33 INFO Master: Registering app PageRankWithGraphFrames
+26/06/20 18:24:33 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260620182433-0017
+26/06/20 18:24:33 INFO Master: Start scheduling for app app-20260620182433-0017 with rpId: 0
+26/06/20 18:24:33 INFO Master: Launching executor app-20260620182433-0017/0 on worker worker-20260620182339-192.168.1.3-62971
+26/06/20 18:24:33 INFO Master: Launching executor app-20260620182433-0017/1 on worker worker-20260620182337-192.168.1.3-62966
+26/06/20 18:24:33 INFO Master: Launching executor app-20260620182433-0017/2 on worker worker-20260620182334-192.168.1.3-62961
+26/06/20 18:24:33 INFO Master: Launching executor app-20260620182433-0017/3 on worker worker-20260620182332-192.168.1.3-62957
+26/06/20 18:24:33 INFO Master: Launching executor app-20260620182433-0017/4 on worker worker-20260620182329-192.168.1.3-62953
+26/06/20 18:24:34 INFO Master: Start scheduling for app app-20260620182433-0017 with rpId: 0
+26/06/20 18:24:34 INFO Master: Start scheduling for app app-20260620182433-0017 with rpId: 0
+26/06/20 18:24:34 INFO Master: Start scheduling for app app-20260620182433-0017 with rpId: 0
+26/06/20 18:24:34 INFO Master: Start scheduling for app app-20260620182433-0017 with rpId: 0
+26/06/20 18:24:34 INFO Master: Start scheduling for app app-20260620182433-0017 with rpId: 0
+26/06/20 18:24:40 INFO Master: Received unregister request from application app-20260620182433-0017
+26/06/20 18:24:40 INFO Master: Removing app app-20260620182433-0017
+26/06/20 18:24:40 WARN Master: Got status update for unknown executor app-20260620182433-0017/0
+26/06/20 18:24:40 WARN Master: Got status update for unknown executor app-20260620182433-0017/4
+26/06/20 18:24:40 INFO Master: 127.0.0.1:62995 got disassociated, removing it.
+26/06/20 18:24:40 INFO Master: 192.168.1.3:62993 got disassociated, removing it.
+26/06/20 18:24:40 WARN Master: Got status update for unknown executor app-20260620182433-0017/1
+26/06/20 18:24:40 WARN Master: Got status update for unknown executor app-20260620182433-0017/2
+26/06/20 18:24:40 WARN Master: Got status update for unknown executor app-20260620182433-0017/3
+26/06/20 18:24:59 INFO Master: Registering app PageRankWithGraphFrames
+26/06/20 18:24:59 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260620182459-0018
+26/06/20 18:24:59 INFO Master: Start scheduling for app app-20260620182459-0018 with rpId: 0
+26/06/20 18:24:59 INFO Master: Launching executor app-20260620182459-0018/0 on worker worker-20260620182339-192.168.1.3-62971
+26/06/20 18:24:59 INFO Master: Launching executor app-20260620182459-0018/1 on worker worker-20260620182337-192.168.1.3-62966
+26/06/20 18:24:59 INFO Master: Launching executor app-20260620182459-0018/2 on worker worker-20260620182334-192.168.1.3-62961
+26/06/20 18:24:59 INFO Master: Launching executor app-20260620182459-0018/3 on worker worker-20260620182332-192.168.1.3-62957
+26/06/20 18:24:59 INFO Master: Launching executor app-20260620182459-0018/4 on worker worker-20260620182329-192.168.1.3-62953
+26/06/20 18:24:59 INFO Master: Start scheduling for app app-20260620182459-0018 with rpId: 0
+26/06/20 18:24:59 INFO Master: Start scheduling for app app-20260620182459-0018 with rpId: 0
+26/06/20 18:24:59 INFO Master: Start scheduling for app app-20260620182459-0018 with rpId: 0
+26/06/20 18:24:59 INFO Master: Start scheduling for app app-20260620182459-0018 with rpId: 0
+26/06/20 18:24:59 INFO Master: Start scheduling for app app-20260620182459-0018 with rpId: 0
+26/06/20 18:26:24 INFO Master: Received unregister request from application app-20260620182459-0018
+26/06/20 18:26:24 INFO Master: Removing app app-20260620182459-0018
+26/06/20 18:26:24 INFO Master: 127.0.0.1:63042 got disassociated, removing it.
+26/06/20 18:26:24 INFO Master: 192.168.1.3:63040 got disassociated, removing it.
+26/06/20 18:26:24 WARN Master: Got status update for unknown executor app-20260620182459-0018/1
+26/06/20 18:26:24 WARN Master: Got status update for unknown executor app-20260620182459-0018/3
+26/06/20 18:26:24 WARN Master: Got status update for unknown executor app-20260620182459-0018/0
+26/06/20 18:26:24 WARN Master: Got status update for unknown executor app-20260620182459-0018/2
+26/06/20 18:26:25 WARN Master: Got status update for unknown executor app-20260620182459-0018/4
+26/06/20 18:26:36 INFO Master: Registering app PageRankWithGraphFrames
+26/06/20 18:26:36 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260620182636-0019
+26/06/20 18:26:36 INFO Master: Start scheduling for app app-20260620182636-0019 with rpId: 0
+26/06/20 18:26:36 INFO Master: Launching executor app-20260620182636-0019/0 on worker worker-20260620182339-192.168.1.3-62971
+26/06/20 18:26:36 INFO Master: Launching executor app-20260620182636-0019/1 on worker worker-20260620182337-192.168.1.3-62966
+26/06/20 18:26:36 INFO Master: Launching executor app-20260620182636-0019/2 on worker worker-20260620182334-192.168.1.3-62961
+26/06/20 18:26:36 INFO Master: Launching executor app-20260620182636-0019/3 on worker worker-20260620182332-192.168.1.3-62957
+26/06/20 18:26:36 INFO Master: Launching executor app-20260620182636-0019/4 on worker worker-20260620182329-192.168.1.3-62953
+26/06/20 18:26:36 INFO Master: Start scheduling for app app-20260620182636-0019 with rpId: 0
+26/06/20 18:26:36 INFO Master: Start scheduling for app app-20260620182636-0019 with rpId: 0
+26/06/20 18:26:36 INFO Master: Start scheduling for app app-20260620182636-0019 with rpId: 0
+26/06/20 18:26:36 INFO Master: Start scheduling for app app-20260620182636-0019 with rpId: 0
+26/06/20 18:26:36 INFO Master: Start scheduling for app app-20260620182636-0019 with rpId: 0
+26/06/20 18:37:52 INFO Master: Received unregister request from application app-20260620182636-0019
+26/06/20 18:37:52 INFO Master: Removing app app-20260620182636-0019
+26/06/20 18:37:52 INFO Master: 127.0.0.1:63171 got disassociated, removing it.
+26/06/20 18:37:52 INFO Master: 192.168.1.3:63169 got disassociated, removing it.
+26/06/20 18:37:53 WARN Master: Got status update for unknown executor app-20260620182636-0019/3
+26/06/20 18:37:53 WARN Master: Got status update for unknown executor app-20260620182636-0019/4
+26/06/20 18:37:53 WARN Master: Got status update for unknown executor app-20260620182636-0019/0
+26/06/20 18:37:53 WARN Master: Got status update for unknown executor app-20260620182636-0019/2
+26/06/20 18:37:53 WARN Master: Got status update for unknown executor app-20260620182636-0019/1
+26/06/20 18:37:57 INFO Master: Registering app PageRankWithGraphFrames
+26/06/20 18:37:57 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260620183757-0020
+26/06/20 18:37:57 INFO Master: Start scheduling for app app-20260620183757-0020 with rpId: 0
+26/06/20 18:37:57 INFO Master: Launching executor app-20260620183757-0020/0 on worker worker-20260620182339-192.168.1.3-62971
+26/06/20 18:37:57 INFO Master: Launching executor app-20260620183757-0020/1 on worker worker-20260620182337-192.168.1.3-62966
+26/06/20 18:37:57 INFO Master: Launching executor app-20260620183757-0020/2 on worker worker-20260620182334-192.168.1.3-62961
+26/06/20 18:37:57 INFO Master: Launching executor app-20260620183757-0020/3 on worker worker-20260620182332-192.168.1.3-62957
+26/06/20 18:37:57 INFO Master: Launching executor app-20260620183757-0020/4 on worker worker-20260620182329-192.168.1.3-62953
+26/06/20 18:37:57 INFO Master: Start scheduling for app app-20260620183757-0020 with rpId: 0
+26/06/20 18:37:57 INFO Master: Start scheduling for app app-20260620183757-0020 with rpId: 0
+26/06/20 18:37:57 INFO Master: Start scheduling for app app-20260620183757-0020 with rpId: 0
+26/06/20 18:37:57 INFO Master: Start scheduling for app app-20260620183757-0020 with rpId: 0
+26/06/20 18:37:57 INFO Master: Start scheduling for app app-20260620183757-0020 with rpId: 0
+26/06/20 19:06:46 INFO Master: Received unregister request from application app-20260620183757-0020
+26/06/20 19:06:46 INFO Master: Removing app app-20260620183757-0020
+26/06/20 19:06:47 INFO Master: 127.0.0.1:63345 got disassociated, removing it.
+26/06/20 19:06:47 INFO Master: 192.168.1.3:63343 got disassociated, removing it.
+26/06/20 19:06:47 WARN Master: Got status update for unknown executor app-20260620183757-0020/0
+26/06/20 19:06:47 WARN Master: Got status update for unknown executor app-20260620183757-0020/4
+26/06/20 19:06:47 WARN Master: Got status update for unknown executor app-20260620183757-0020/1
+26/06/20 19:06:47 WARN Master: Got status update for unknown executor app-20260620183757-0020/3
+26/06/20 19:06:47 WARN Master: Got status update for unknown executor app-20260620183757-0020/2
+26/06/20 19:07:13 INFO Master: 127.0.0.1:62973 got disassociated, removing it.
+26/06/20 19:07:13 INFO Master: 192.168.1.3:62971 got disassociated, removing it.
+26/06/20 19:07:13 INFO Master: Removing worker worker-20260620182339-192.168.1.3-62971 on 192.168.1.3:62971
+26/06/20 19:07:13 INFO Master: Telling app of lost worker: worker-20260620182339-192.168.1.3-62971
+26/06/20 19:07:13 INFO Master: 127.0.0.1:62959 got disassociated, removing it.
+26/06/20 19:07:13 INFO Master: 192.168.1.3:62957 got disassociated, removing it.
+26/06/20 19:07:13 INFO Master: Removing worker worker-20260620182332-192.168.1.3-62957 on 192.168.1.3:62957
+26/06/20 19:07:13 INFO Master: Telling app of lost worker: worker-20260620182332-192.168.1.3-62957
+26/06/20 19:07:13 INFO Master: 127.0.0.1:62955 got disassociated, removing it.
+26/06/20 19:07:13 INFO Master: 192.168.1.3:62953 got disassociated, removing it.
+26/06/20 19:07:13 INFO Master: Removing worker worker-20260620182329-192.168.1.3-62953 on 192.168.1.3:62953
+26/06/20 19:07:13 INFO Master: Telling app of lost worker: worker-20260620182329-192.168.1.3-62953
+26/06/20 19:07:13 INFO Master: 127.0.0.1:62963 got disassociated, removing it.
+26/06/20 19:07:13 INFO Master: 192.168.1.3:62961 got disassociated, removing it.
+26/06/20 19:07:13 INFO Master: Removing worker worker-20260620182334-192.168.1.3-62961 on 192.168.1.3:62961
+26/06/20 19:07:13 INFO Master: Telling app of lost worker: worker-20260620182334-192.168.1.3-62961
+26/06/20 19:07:13 INFO Master: 127.0.0.1:62968 got disassociated, removing it.
+26/06/20 19:07:13 INFO Master: 192.168.1.3:62966 got disassociated, removing it.
+26/06/20 19:07:13 INFO Master: Removing worker worker-20260620182337-192.168.1.3-62966 on 192.168.1.3:62966
+26/06/20 19:07:13 INFO Master: Telling app of lost worker: worker-20260620182337-192.168.1.3-62966
+26/06/20 19:07:21 INFO Master: Registering worker 192.168.1.3:63946 with 1 cores, 1024.0 MiB RAM
+26/06/20 19:07:23 INFO Master: Registering worker 192.168.1.3:63950 with 1 cores, 1024.0 MiB RAM
+26/06/20 19:07:25 INFO Master: Registering worker 192.168.1.3:63954 with 1 cores, 1024.0 MiB RAM
+26/06/20 19:07:28 INFO Master: Registering worker 192.168.1.3:63958 with 1 cores, 1024.0 MiB RAM
+26/06/20 19:07:30 INFO Master: Registering worker 192.168.1.3:63962 with 1 cores, 1024.0 MiB RAM
+26/06/20 19:07:36 INFO Master: Registering app PageRankWithGraphFrames
+26/06/20 19:07:36 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260620190736-0021
+26/06/20 19:07:36 INFO Master: Start scheduling for app app-20260620190736-0021 with rpId: 0
+26/06/20 19:07:36 INFO Master: Launching executor app-20260620190736-0021/0 on worker worker-20260620190730-192.168.1.3-63962
+26/06/20 19:07:36 INFO Master: Launching executor app-20260620190736-0021/1 on worker worker-20260620190728-192.168.1.3-63958
+26/06/20 19:07:36 INFO Master: Launching executor app-20260620190736-0021/2 on worker worker-20260620190725-192.168.1.3-63954
+26/06/20 19:07:36 INFO Master: Launching executor app-20260620190736-0021/3 on worker worker-20260620190722-192.168.1.3-63950
+26/06/20 19:07:36 INFO Master: Launching executor app-20260620190736-0021/4 on worker worker-20260620190720-192.168.1.3-63946
+26/06/20 19:07:36 INFO Master: Start scheduling for app app-20260620190736-0021 with rpId: 0
+26/06/20 19:07:36 INFO Master: Start scheduling for app app-20260620190736-0021 with rpId: 0
+26/06/20 19:07:36 INFO Master: Start scheduling for app app-20260620190736-0021 with rpId: 0
+26/06/20 19:07:36 INFO Master: Start scheduling for app app-20260620190736-0021 with rpId: 0
+26/06/20 19:07:36 INFO Master: Start scheduling for app app-20260620190736-0021 with rpId: 0
+26/06/20 19:08:39 INFO Master: Received unregister request from application app-20260620190736-0021
+26/06/20 19:08:39 INFO Master: Removing app app-20260620190736-0021
+26/06/20 19:08:39 INFO Master: 127.0.0.1:63972 got disassociated, removing it.
+26/06/20 19:08:39 INFO Master: 192.168.1.3:63970 got disassociated, removing it.
+26/06/20 19:08:39 WARN Master: Got status update for unknown executor app-20260620190736-0021/4
+26/06/20 19:08:39 WARN Master: Got status update for unknown executor app-20260620190736-0021/1
+26/06/20 19:08:39 WARN Master: Got status update for unknown executor app-20260620190736-0021/0
+26/06/20 19:08:40 WARN Master: Got status update for unknown executor app-20260620190736-0021/2
+26/06/20 19:08:40 WARN Master: Got status update for unknown executor app-20260620190736-0021/3
+26/06/20 19:13:01 INFO Master: Registering app PageRankWithGraphFrames
+26/06/20 19:13:01 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260620191301-0022
+26/06/20 19:13:01 INFO Master: Start scheduling for app app-20260620191301-0022 with rpId: 0
+26/06/20 19:13:01 INFO Master: Launching executor app-20260620191301-0022/0 on worker worker-20260620190730-192.168.1.3-63962
+26/06/20 19:13:01 INFO Master: Launching executor app-20260620191301-0022/1 on worker worker-20260620190728-192.168.1.3-63958
+26/06/20 19:13:01 INFO Master: Launching executor app-20260620191301-0022/2 on worker worker-20260620190725-192.168.1.3-63954
+26/06/20 19:13:01 INFO Master: Launching executor app-20260620191301-0022/3 on worker worker-20260620190722-192.168.1.3-63950
+26/06/20 19:13:01 INFO Master: Launching executor app-20260620191301-0022/4 on worker worker-20260620190720-192.168.1.3-63946
+26/06/20 19:13:01 INFO Master: Start scheduling for app app-20260620191301-0022 with rpId: 0
+26/06/20 19:13:01 INFO Master: Start scheduling for app app-20260620191301-0022 with rpId: 0
+26/06/20 19:13:01 INFO Master: Start scheduling for app app-20260620191301-0022 with rpId: 0
+26/06/20 19:13:01 INFO Master: Start scheduling for app app-20260620191301-0022 with rpId: 0
+26/06/20 19:13:01 INFO Master: Start scheduling for app app-20260620191301-0022 with rpId: 0
+26/06/20 19:13:03 INFO Master: Received unregister request from application app-20260620191301-0022
+26/06/20 19:13:03 INFO Master: Removing app app-20260620191301-0022
+26/06/20 19:13:04 WARN Master: Got status update for unknown executor app-20260620191301-0022/3
+26/06/20 19:13:04 INFO Master: 127.0.0.1:64166 got disassociated, removing it.
+26/06/20 19:13:04 INFO Master: 192.168.1.3:64164 got disassociated, removing it.
+26/06/20 19:13:04 WARN Master: Got status update for unknown executor app-20260620191301-0022/4
+26/06/20 19:13:04 WARN Master: Got status update for unknown executor app-20260620191301-0022/2
+26/06/20 19:13:04 WARN Master: Got status update for unknown executor app-20260620191301-0022/0
+26/06/20 19:13:04 WARN Master: Got status update for unknown executor app-20260620191301-0022/1
+26/06/20 19:13:25 INFO Master: Registering app PageRankWithGraphFrames
+26/06/20 19:13:25 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260620191325-0023
+26/06/20 19:13:25 INFO Master: Start scheduling for app app-20260620191325-0023 with rpId: 0
+26/06/20 19:13:25 INFO Master: Launching executor app-20260620191325-0023/0 on worker worker-20260620190730-192.168.1.3-63962
+26/06/20 19:13:25 INFO Master: Launching executor app-20260620191325-0023/1 on worker worker-20260620190728-192.168.1.3-63958
+26/06/20 19:13:25 INFO Master: Launching executor app-20260620191325-0023/2 on worker worker-20260620190725-192.168.1.3-63954
+26/06/20 19:13:25 INFO Master: Launching executor app-20260620191325-0023/3 on worker worker-20260620190722-192.168.1.3-63950
+26/06/20 19:13:25 INFO Master: Launching executor app-20260620191325-0023/4 on worker worker-20260620190720-192.168.1.3-63946
+26/06/20 19:13:25 INFO Master: Start scheduling for app app-20260620191325-0023 with rpId: 0
+26/06/20 19:13:25 INFO Master: Start scheduling for app app-20260620191325-0023 with rpId: 0
+26/06/20 19:13:25 INFO Master: Start scheduling for app app-20260620191325-0023 with rpId: 0
+26/06/20 19:13:25 INFO Master: Start scheduling for app app-20260620191325-0023 with rpId: 0
+26/06/20 19:13:25 INFO Master: Start scheduling for app app-20260620191325-0023 with rpId: 0
+26/06/20 19:20:14 INFO Master: Received unregister request from application app-20260620191325-0023
+26/06/20 19:20:14 INFO Master: Removing app app-20260620191325-0023
+26/06/20 19:20:15 INFO Master: 127.0.0.1:64216 got disassociated, removing it.
+26/06/20 19:20:15 INFO Master: 192.168.1.3:64215 got disassociated, removing it.
+26/06/20 19:20:15 WARN Master: Got status update for unknown executor app-20260620191325-0023/3
+26/06/20 19:20:15 WARN Master: Got status update for unknown executor app-20260620191325-0023/4
+26/06/20 19:20:15 WARN Master: Got status update for unknown executor app-20260620191325-0023/0
+26/06/20 19:20:15 WARN Master: Got status update for unknown executor app-20260620191325-0023/2
+26/06/20 19:20:15 WARN Master: Got status update for unknown executor app-20260620191325-0023/1
+26/06/20 19:21:26 INFO Master: Registering app PageRankWithGraphFrames
+26/06/20 19:21:26 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260620192126-0024
+26/06/20 19:21:26 INFO Master: Start scheduling for app app-20260620192126-0024 with rpId: 0
+26/06/20 19:21:26 INFO Master: Launching executor app-20260620192126-0024/0 on worker worker-20260620190730-192.168.1.3-63962
+26/06/20 19:21:26 INFO Master: Launching executor app-20260620192126-0024/1 on worker worker-20260620190728-192.168.1.3-63958
+26/06/20 19:21:26 INFO Master: Launching executor app-20260620192126-0024/2 on worker worker-20260620190725-192.168.1.3-63954
+26/06/20 19:21:26 INFO Master: Launching executor app-20260620192126-0024/3 on worker worker-20260620190722-192.168.1.3-63950
+26/06/20 19:21:26 INFO Master: Launching executor app-20260620192126-0024/4 on worker worker-20260620190720-192.168.1.3-63946
+26/06/20 19:21:26 INFO Master: Start scheduling for app app-20260620192126-0024 with rpId: 0
+26/06/20 19:21:26 INFO Master: Start scheduling for app app-20260620192126-0024 with rpId: 0
+26/06/20 19:21:26 INFO Master: Start scheduling for app app-20260620192126-0024 with rpId: 0
+26/06/20 19:21:26 INFO Master: Start scheduling for app app-20260620192126-0024 with rpId: 0
+26/06/20 19:21:26 INFO Master: Start scheduling for app app-20260620192126-0024 with rpId: 0
+26/06/20 19:26:32 INFO Master: Received unregister request from application app-20260620192126-0024
+26/06/20 19:26:32 INFO Master: Removing app app-20260620192126-0024
+26/06/20 19:26:32 INFO Master: 127.0.0.1:64435 got disassociated, removing it.
+26/06/20 19:26:32 INFO Master: 192.168.1.3:64434 got disassociated, removing it.
+26/06/20 19:26:32 WARN Master: Got status update for unknown executor app-20260620192126-0024/2
+26/06/20 19:26:33 WARN Master: Got status update for unknown executor app-20260620192126-0024/1
+26/06/20 19:26:33 WARN Master: Got status update for unknown executor app-20260620192126-0024/0
+26/06/20 19:26:33 WARN Master: Got status update for unknown executor app-20260620192126-0024/3
+26/06/20 19:26:33 WARN Master: Got status update for unknown executor app-20260620192126-0024/4
+26/06/20 19:28:39 INFO Master: 127.0.0.1:63948 got disassociated, removing it.
+26/06/20 19:28:39 INFO Master: 127.0.0.1:63960 got disassociated, removing it.
+26/06/20 19:28:39 INFO Master: 192.168.1.3:63946 got disassociated, removing it.
+26/06/20 19:28:39 INFO Master: Removing worker worker-20260620190720-192.168.1.3-63946 on 192.168.1.3:63946
+26/06/20 19:28:39 INFO Master: Telling app of lost worker: worker-20260620190720-192.168.1.3-63946
+26/06/20 19:28:39 INFO Master: 192.168.1.3:63958 got disassociated, removing it.
+26/06/20 19:28:39 INFO Master: Removing worker worker-20260620190728-192.168.1.3-63958 on 192.168.1.3:63958
+26/06/20 19:28:39 INFO Master: Telling app of lost worker: worker-20260620190728-192.168.1.3-63958
+26/06/20 19:28:39 INFO Master: 127.0.0.1:63952 got disassociated, removing it.
+26/06/20 19:28:39 INFO Master: 192.168.1.3:63950 got disassociated, removing it.
+26/06/20 19:28:39 INFO Master: Removing worker worker-20260620190722-192.168.1.3-63950 on 192.168.1.3:63950
+26/06/20 19:28:39 INFO Master: Telling app of lost worker: worker-20260620190722-192.168.1.3-63950
+26/06/20 19:28:39 INFO Master: 127.0.0.1:63956 got disassociated, removing it.
+26/06/20 19:28:39 INFO Master: 192.168.1.3:63954 got disassociated, removing it.
+26/06/20 19:28:39 INFO Master: Removing worker worker-20260620190725-192.168.1.3-63954 on 192.168.1.3:63954
+26/06/20 19:28:39 INFO Master: Telling app of lost worker: worker-20260620190725-192.168.1.3-63954
+26/06/20 19:28:39 INFO Master: 127.0.0.1:63964 got disassociated, removing it.
+26/06/20 19:28:39 INFO Master: 192.168.1.3:63962 got disassociated, removing it.
+26/06/20 19:28:39 INFO Master: Removing worker worker-20260620190730-192.168.1.3-63962 on 192.168.1.3:63962
+26/06/20 19:28:39 INFO Master: Telling app of lost worker: worker-20260620190730-192.168.1.3-63962
+26/06/20 19:28:44 INFO Master: Registering worker 192.168.1.3:64589 with 1 cores, 1024.0 MiB RAM
+26/06/20 19:28:45 INFO Master: Registering worker 192.168.1.3:64593 with 1 cores, 1024.0 MiB RAM
+26/06/20 19:28:51 INFO Master: Registering app PageRankWithGraphFrames
+26/06/20 19:28:51 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260620192851-0025
+26/06/20 19:28:51 INFO Master: Start scheduling for app app-20260620192851-0025 with rpId: 0
+26/06/20 19:28:51 INFO Master: Launching executor app-20260620192851-0025/0 on worker worker-20260620192845-192.168.1.3-64593
+26/06/20 19:28:51 INFO Master: Launching executor app-20260620192851-0025/1 on worker worker-20260620192843-192.168.1.3-64589
+26/06/20 19:28:52 INFO Master: Start scheduling for app app-20260620192851-0025 with rpId: 0
+26/06/20 19:28:52 INFO Master: Start scheduling for app app-20260620192851-0025 with rpId: 0
+26/06/20 19:33:49 INFO Master: Received unregister request from application app-20260620192851-0025
+26/06/20 19:33:49 INFO Master: Removing app app-20260620192851-0025
+26/06/20 19:33:49 INFO Master: 127.0.0.1:64602 got disassociated, removing it.
+26/06/20 19:33:49 INFO Master: 192.168.1.3:64600 got disassociated, removing it.
+26/06/20 19:33:49 WARN Master: Got status update for unknown executor app-20260620192851-0025/1
+26/06/20 19:33:50 WARN Master: Got status update for unknown executor app-20260620192851-0025/0
+26/06/20 19:35:16 INFO Master: 127.0.0.1:64595 got disassociated, removing it.
+26/06/20 19:35:16 INFO Master: 192.168.1.3:64593 got disassociated, removing it.
+26/06/20 19:35:16 INFO Master: Removing worker worker-20260620192845-192.168.1.3-64593 on 192.168.1.3:64593
+26/06/20 19:35:16 INFO Master: Telling app of lost worker: worker-20260620192845-192.168.1.3-64593
+26/06/20 19:35:16 INFO Master: 127.0.0.1:64591 got disassociated, removing it.
+26/06/20 19:35:16 INFO Master: 192.168.1.3:64589 got disassociated, removing it.
+26/06/20 19:35:16 INFO Master: Removing worker worker-20260620192843-192.168.1.3-64589 on 192.168.1.3:64589
+26/06/20 19:35:16 INFO Master: Telling app of lost worker: worker-20260620192843-192.168.1.3-64589
+26/06/20 19:35:21 INFO Master: Registering worker 192.168.1.3:64687 with 1 cores, 1024.0 MiB RAM
+26/06/20 19:35:27 INFO Master: Registering app PageRankWithGraphFrames
+26/06/20 19:35:27 INFO Master: Registered app PageRankWithGraphFrames with ID app-20260620193527-0026
+26/06/20 19:35:27 INFO Master: Start scheduling for app app-20260620193527-0026 with rpId: 0
+26/06/20 19:35:27 INFO Master: Launching executor app-20260620193527-0026/0 on worker worker-20260620193521-192.168.1.3-64687
+26/06/20 19:35:27 INFO Master: Start scheduling for app app-20260620193527-0026 with rpId: 0
+26/06/20 19:37:10 INFO Master: Received unregister request from application app-20260620193527-0026
+26/06/20 19:37:10 INFO Master: Removing app app-20260620193527-0026
+26/06/20 19:37:10 INFO Master: 127.0.0.1:64695 got disassociated, removing it.
+26/06/20 19:37:10 INFO Master: 192.168.1.3:64694 got disassociated, removing it.
+26/06/20 19:37:10 WARN Master: Got status update for unknown executor app-20260620193527-0026/0
+26/06/20 19:37:20 INFO Master: 127.0.0.1:64689 got disassociated, removing it.
+26/06/20 19:37:20 INFO Master: 192.168.1.3:64687 got disassociated, removing it.
+26/06/20 19:37:20 INFO Master: Removing worker worker-20260620193521-192.168.1.3-64687 on 192.168.1.3:64687
+26/06/20 19:37:20 INFO Master: Telling app of lost worker: worker-20260620193521-192.168.1.3-64687
+26/06/20 19:37:35 ERROR Master: RECEIVED SIGNAL TERM

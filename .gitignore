@@ -1,0 +1,6 @@
+.vscode/
+.idea/
+.logs/
+yarn/
+data/
+jars/
